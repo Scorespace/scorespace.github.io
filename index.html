@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="globalstyle.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+
+            $(document).ready(function(){
+                $("#pagecontents").load("home.html");
+                var toggled = true;
+                $("#logo").click(function(){
+                    $("#sidebar").slideToggle(400, function(){
+                        toggled = !toggled;
+                        if(toggled == true){
+                            document.getElementById("pagecontents").style.marginLeft = "15vw";
+                        } else{
+                            document.getElementById("pagecontents").style.marginLeft = "0vw";
+                        }
+                    }, false);
+                });
+            });
+            function onClick(string){
+                $("#pagecontents").load(string);
+            }
+            
+        </script>
+        
+    </head>
+    
+    <div id="topbar">
+        <img id="logo" src="Assets/logo.png" width=100 height=100>
+    </div>
+    
+    <div id="sidebar">
+        <br>
+        <clickable onclick="onClick('home.html')">Home</clickable>
+        <br>
+        <clickable onclick="onClick('rules.html')">Rules</clickable>
+        <br>
+        <clickable onclick="onClick('announcements.html')">Announcements</clickable>
+    </div>
+    
+    <div id="pagecontents">
+
+    </div>
+
+
+</html>

@@ -1,0 +1,80 @@
+#sidebar{
+    background-color: #09021f;
+    width: 15vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    text-align: center;
+    margin-top: 50px;
+    
+    display: inline-block;
+    
+    font-size: 16px;
+    font-size: 2.5vmin;
+    font-family: "Lucida Sans Unicode";
+    color: white;
+    word-wrap: break-word;
+}
+#topbar{
+    background-color: #09021f;
+    width: 100vw;
+    height: 50px;
+    
+    display: inline-block;
+    
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+    font-family: "Lucida Sans Unicode";
+}
+
+#pagecontents{
+    font-size: 15px;
+    font-family: "Lucida Sans Unicode";
+    margin-left: 15vw;
+    margin-top: 50px;
+    
+    
+}
+
+#logo{
+    align-self: center;
+    top: -25px;
+    left: calc(7.5vw - 55px);
+    position: absolute;
+}
+
+#logo:hover{
+    opacity:0.5;
+}
+
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h3{
+    padding: 0px;
+    margin: 0;
+}
+
+body{
+    background-color:whitesmoke;
+}
+
+clickable:hover{
+    color:gray;
+    cursor:pointer;
+}
+
+b{
+    font-size: 35px;
+}
+
