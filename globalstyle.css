@@ -15,7 +15,6 @@
     font-size: 2.5vmin;
     font-family: Lato;
     color: white;
-    word-wrap: break-word;
 }
 #topbar{
     background-color: #09021f;
@@ -69,7 +68,17 @@ body{
     background-color:whitesmoke;
 }
 
-clickable:hover{
+button{
+    padding: 25px;
+    background: transparent;
+    color: white;
+    border-width: 0px;
+    font-family: inherit;
+    font-size: inherit;
+    word-wrap: break-word;
+}
+
+button:hover{
     color:gray;
     cursor:pointer;
 }
