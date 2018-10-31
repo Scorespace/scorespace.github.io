@@ -1,21 +1,45 @@
-#sidebar{
-    background-color: #09021f;
-    width: 15vw;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0;
-    text-align: center;
-    margin-top: 50px;
-    
-    display: inline-block;
-    
-    font-size: 16px;
-    font-size: 2.5vmin;
-    font-family: Lato;
-    color: white;
+@media only (min-width:1025px){
+    #sidebar{
+        background-color: #09021f;
+        width: 15vw;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        text-align: center;
+        margin-top: 50px;
+
+        display: inline-block;
+
+        font-size: 16px;
+        font-size: 2.5vmin;
+        font-family: Lato;
+        color: white;
+    }
 }
+
+@media only (min-width: 320px){
+    #sidebar{
+        background-color: #09021f;
+        width: 25vw;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        text-align: center;
+        margin-top: 50px;
+
+        display: inline-block;
+
+        font-size: 16px;
+        font-size: 2.5vmin;
+        font-family: Lato;
+        color: white;
+    } 
+}
+
 #topbar{
     background-color: #09021f;
     width: 100vw;
