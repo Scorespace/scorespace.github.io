@@ -76,6 +76,7 @@ button{
     font-family: inherit;
     font-size: inherit;
     word-wrap: break-word;
+    width: inherit;
 }
 
 button:hover{
