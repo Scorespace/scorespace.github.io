@@ -54,6 +54,13 @@
     opacity:0.5;
 }
 
+#modal{
+    background-color: black;
+    opacity: 0.65;
+    width: 100vw;
+    height: 100vh;
+}
+
 .centered {
     display: block;
     margin-left: auto;
@@ -89,9 +96,4 @@ button:hover{
 
 b{
     font-size: 25px;
-}
-
-#modal{
-    background-color: black;
-    opacity: 0.65;
 }
