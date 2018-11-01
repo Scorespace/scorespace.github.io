@@ -7,17 +7,35 @@
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" />
         
         <script>
-
+            //When the DOM has loaded
             $(document).ready(function(){
+                //Load the home page
                 $("#pagecontents").load("home.html");
+                
+                var pageContents = document.getElementById("pagecontents");
+                //If the screen is thinner than 700px, render the page contents in the center
+                if(window.matchMedia("(max-width: 700px)")){
+                    pageContents.style.marginLeft = "0";
+                } else{
+                    pageContents.style.marginLeft = "20vw";
+                }
                 var toggled = true;
+                //When the logo is clicked
                 $("#logo").click(function(){
+                    //Animate the sidebar to slide, then activate the function.
                     $("#sidebar").slideToggle(400, function(){
+                        //Swap toggled.
                         toggled = !toggled;
-                        if(toggled == true){
-                            document.getElementById("pagecontents").style.marginLeft = "20vw";
+                        //If the window is wider than 700px
+                        if(!window.matchMedia("(max-width: 700px)")){
+                            //If it is toggled on
+                            if(toggled == true){
+                                pageContents.style.marginLeft = "20vw";
+                            } else{
+                                pageContents.style.marginLeft = "0vw";
+                            }
                         } else{
-                            document.getElementById("pagecontents").style.marginLeft = "0vw";
+                            pageContents.style.marginLeft = "0";
                         }
                     }, false);
                 });
