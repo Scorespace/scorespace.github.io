@@ -91,7 +91,7 @@ b{
     font-size: 25px;
 }
 
-img:hover{
+.expandable:hover{
     transform: scale(10);   
 }
 
