@@ -34,12 +34,13 @@ button:focus{
 }
 
 button:hover{
-    color: red;
+    color: turquoise;
     cursor: pointer;
 }
 
 .active{
     background: #001a47;
+    color: turquoise;
 }
 
 #topbar{
@@ -74,6 +75,7 @@ button:hover{
         width: 100vw;
         height: 100%;
         margin: 0;
+        margin-top: 50px;
         padding: 0;
         display: block;
     }
