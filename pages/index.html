@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="globalstyle.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" />
+        
+        <script>
+            //When the DOM has loaded
+            $(document).ready(function(){
+                //Load the home page
+                $("#pagecontents").load("home.html");
+                
+                //Get the pagecontents DOM element
+                var pageContents = document.getElementById("pagecontents");
+                
+                //State of sidebar
+                var toggled = true;
+                
+                //If the screen is thinner than 700px, render the page contents in the center, otherwise account for the sidebar
+                if(window.matchMedia("(max-width: 700px)").matches){
+                    pageContents.style.marginTop = "8vw";
+                    pageContents.style.marginLeft = "0px";
+                } else{
+                    pageContents.style.marginLeft = "12vw";
+                }
+                
+                //When the logo is clicked
+                $("#logo").click(function(){
+                    //Animate the sidebar to slide, then activate the function.
+                    $("#sidebar").slideToggle(400, function(){
+                        //Swap the variable that stores the state of the sidebar
+                        toggled = !toggled
+                        //If screen is smaller than 700px,
+                        if(window.matchMedia("(max-width: 700px)").matches){
+                            //Change the margin-top to account for the topbar, and get rid of any margin accounting for the sidebar
+                            pageContents.style.marginLeft = "0px";
+                            if(toggled){
+                                pageContents.style.marginTop = "8vw";
+                            } else{
+                                pageContents.style.marginTop = "50px";
+                            }
+                        } else{
+                            //Change the margin-left to account for the sidebar
+                            if(toggled){
+                                pageContents.style.marginLeft = "12vw";
+                            } else{
+                                pageContents.style.marginLeft = "0px";
+                            }
+                        }
+                    }, false);
+
+                });
+                //When the window is resized
+                $(window).resize(function(){
+                    //If the screen is smaller than 700px
+                    if(window.matchMedia("(max-width: 700px)").matches){
+                        //Remove any margin-left accounting for the sidebar
+                        pageContents.style.marginLeft = "0px";
+                        //If the sidebar is active
+                        if(toggled){
+                            //Get rid of margin-top accounting for topbar
+                            pageContents.style.marginTop = "8vw";
+                        } else{
+                            //Add margin-top to account for the topbar
+                            pageContents.style.marginTop = "50px";
+                        }
+                    } else{
+                        //Add margin-top to account for the topbar
+                        pageContents.style.marginTop = "6vw";
+                        //If the sidebar is active
+                        if(toggled){
+                            //Add margin-left to account for the sidebar
+                            pageContents.style.marginLeft = "12vw";
+                        } else{
+                            //Remove margin-left accounting for the sidebar
+                            pageContents.style.marginLeft = "0px";
+                        }
+                    }
+                });
+            });
+            
+            //Callback function, when a button is clicked.
+            //NOTE - I couldn't use jquery as you cant pass arguments from the html element
+            function onClick(string, obj){
+                //Use AJAX to load a html page into the content div
+                $("#pagecontents").load(string);
+                $(".active").removeClass("active");
+                $(obj).addClass("active");
+            }
+            
+            
+        </script>
+        
+    </head>
+   
+    
+    <div id="topbar">
+        <img id="logo" src="Assets/logo.png" width=100 height=100>
+    </div>
+    
+    <div id="sidebar">
+        
+        <br>
+        <br>
+        <button id="home" class="active" onclick="onClick('home.html', this)">Home</button>
+        <br>
+        <button id="rules" onclick="onClick('rules.html', this)">Rules</button>
+        <br>
+        <button id="news" onclick="onClick('news.html', this)">News</button>
+    </div>
+    
+    <div id="pagecontents">
+
+    </div>
+    
+    <div id="contactcontainer">
+        <img id="discordlogo"
+        <iframe src="https://discordapp.com/widget?id=481868362041917450&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+    </div>
+
+
+</html>
