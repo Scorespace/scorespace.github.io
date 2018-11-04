@@ -66,14 +66,29 @@ button:hover{
     padding: 5px;
 }
 
-#contact{
-    z-index: 1;
-    color: white;
-    font-family: Lato;
-    font-size: 15px;
+
+#contactcontainer{
+    background-color: #23272A;
+    width: auto;
+    height: auto;
     position: fixed;
-    right: 0px;
-    background-color: #001a47;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    text-align: Left;
+    border-radius: 5px;
+    
+    display: inline-block;
+    
+    font-size: 16px;
+    font-size: 2vmin;
+    font-family: Lato;
+    color: white;
+}
+
+#discordlogo{
+    
 }
 
 #logo{
