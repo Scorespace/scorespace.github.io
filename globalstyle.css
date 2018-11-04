@@ -29,6 +29,19 @@ button{
     width: inherit;
 }
 
+button:focus{
+    outline: 0;
+}
+
+button:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.active{
+    background: #001a47;
+}
+
 #topbar{
     background-color: #09021f;
     width: 100vw;
@@ -50,6 +63,7 @@ button{
     font-family: Lato;
     margin-left: 20vw;
     margin-top: 50px;
+    padding: 5px;
 }
 
 @media (max-width: 700px){
@@ -61,6 +75,7 @@ button{
         height: 100%;
         margin: 0;
         padding: 0;
+        display: block;
     }
     #sidebar button{
         font-size: 20px;
@@ -70,14 +85,12 @@ button{
     }
     
     #pagecontents{
-        margin-top: 0px;
-        padding-left: 7px;
+        margin: 0;
+        margin-top: 75px;
+        padding: 0;
+        display: block;
     }
 }
-
-
-
-
 
 #logo{
     align-self: center;
@@ -90,10 +103,6 @@ button{
     opacity:0.5;
 }
 
-#modal{
-
-    
-}
 
 .centered {
     display: block;
@@ -112,10 +121,7 @@ body{
     margin: 0;
 }
 
-button:hover{
-    color:gray;
-    cursor:pointer;
-}
+
 
 b{
     font-size: 25px;

@@ -12,37 +12,82 @@
                 //Load the home page
                 $("#pagecontents").load("home.html");
                 
+                //Get the pagecontents DOM element
                 var pageContents = document.getElementById("pagecontents");
-                //If the screen is thinner than 700px, render the page contents in the center
-                if(window.matchMedia("(max-width: 700px)")){
-                    pageContents.style.marginLeft = "0";
+                
+                //State of sidebar
+                var toggled = true;
+                
+                //If the screen is thinner than 700px, render the page contents in the center, otherwise account for the sidebar
+                if(window.matchMedia("(max-width: 700px)").matches){
+                    pageContents.style.marginTop = "0px";
+                    pageContents.style.marginLeft = "0px";
                 } else{
                     pageContents.style.marginLeft = "20vw";
                 }
-                var toggled = true;
+                
                 //When the logo is clicked
                 $("#logo").click(function(){
                     //Animate the sidebar to slide, then activate the function.
                     $("#sidebar").slideToggle(400, function(){
-                        //Swap toggled.
-                        toggled = !toggled;
-                        //If the window is wider than 700px
-                        if(!window.matchMedia("(max-width: 700px)")){
-                            //If it is toggled on
-                            if(toggled == true){
-                                pageContents.style.marginLeft = "20vw";
+                        //Swap the variable that stores the state of the sidebar
+                        toggled = !toggled
+                        //If screen is smaller than 700px,
+                        if(window.matchMedia("(max-width: 700px)").matches){
+                            //Change the margin-top to account for the topbar, and get rid of any margin accounting for the sidebar
+                            pageContents.style.marginLeft = "0px";
+                            if(toggled){
+                                pageContents.style.marginTop = "0px";
                             } else{
-                                pageContents.style.marginLeft = "0vw";
+                                pageContents.style.marginTop = "50px";
                             }
                         } else{
-                            pageContents.style.marginLeft = "0";
+                            //Change the margin-left to account for the sidebar
+                            if(toggled){
+                                pageContents.style.marginLeft = "20vw";
+                            } else{
+                                pageContents.style.marginLeft = "0px";
+                            }
                         }
                     }, false);
+
+                });
+                //When the window is resized
+                $(window).resize(function(){
+                    //If the screen is smaller than 700px
+                    if(window.matchMedia("(max-width: 700px)").matches){
+                        //Remove any margin-left accounting for the sidebar
+                        pageContents.style.marginLeft = "0px";
+                        //If the sidebar is active
+                        if(toggled){
+                            //Get rid of margin-top accounting for topbar
+                            pageContents.style.marginTop = "0px";
+                        } else{
+                            //Add margin-top to account for the topbar
+                            pageContents.style.marginTop = "50px";
+                        }
+                    } else{
+                        //Add margin-top to account for the topbar
+                        pageContents.style.marginTop = "50px";
+                        //If the sidebar is active
+                        if(toggled){
+                            //Add margin-left to account for the sidebar
+                            pageContents.style.marginLeft = "20vw";
+                        } else{
+                            //Remove margin-left accounting for the sidebar
+                            pageContents.style.marginLeft = "0px";
+                        }
+                    }
                 });
             });
-        
-            function onClick(string){
+            
+            //Callback function, when a button is clicked.
+            //NOTE - I couldn't use jquery as you cant pass arguments from the html element
+            function onClick(string, obj){
+                //Use AJAX to load a html page into the content div
                 $("#pagecontents").load(string);
+                $(".active").removeClass("active");
+                $(obj).addClass("active");
             }
             
             
@@ -58,15 +103,11 @@
     <div id="sidebar">
         <br>
         <br>
-        <button onclick="onClick('home.html')">Home</button>
+        <button id="home" onclick="onClick('home.html', this)">Home</button>
         <br>
-        <button onclick="onClick('rules.html')">Rules</button>
+        <button id="rules" onclick="onClick('rules.html', this)">Rules</button>
         <br>
-        <button onclick="onClick('announcements.html')">Announcements</button>
-    </div>
-    
-    <div id="modal">
-        <div class="modalcontent" id="img01">
+        <button id="announcements" class="" onclick="onClick('announcements.html', this)">Announcements</button>
     </div>
     
     <div id="pagecontents">
