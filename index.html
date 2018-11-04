@@ -20,10 +20,10 @@
                 
                 //If the screen is thinner than 700px, render the page contents in the center, otherwise account for the sidebar
                 if(window.matchMedia("(max-width: 700px)").matches){
-                    pageContents.style.marginTop = "0px";
+                    pageContents.style.marginTop = "8vw";
                     pageContents.style.marginLeft = "0px";
                 } else{
-                    pageContents.style.marginLeft = "20vw";
+                    pageContents.style.marginLeft = "12vw";
                 }
                 
                 //When the logo is clicked
@@ -37,14 +37,14 @@
                             //Change the margin-top to account for the topbar, and get rid of any margin accounting for the sidebar
                             pageContents.style.marginLeft = "0px";
                             if(toggled){
-                                pageContents.style.marginTop = "0px";
+                                pageContents.style.marginTop = "8vw";
                             } else{
                                 pageContents.style.marginTop = "50px";
                             }
                         } else{
                             //Change the margin-left to account for the sidebar
                             if(toggled){
-                                pageContents.style.marginLeft = "20vw";
+                                pageContents.style.marginLeft = "12vw";
                             } else{
                                 pageContents.style.marginLeft = "0px";
                             }
@@ -61,18 +61,18 @@
                         //If the sidebar is active
                         if(toggled){
                             //Get rid of margin-top accounting for topbar
-                            pageContents.style.marginTop = "0px";
+                            pageContents.style.marginTop = "8vw";
                         } else{
                             //Add margin-top to account for the topbar
                             pageContents.style.marginTop = "50px";
                         }
                     } else{
                         //Add margin-top to account for the topbar
-                        pageContents.style.marginTop = "50px";
+                        pageContents.style.marginTop = "6vw";
                         //If the sidebar is active
                         if(toggled){
                             //Add margin-left to account for the sidebar
-                            pageContents.style.marginLeft = "20vw";
+                            pageContents.style.marginLeft = "12vw";
                         } else{
                             //Remove margin-left accounting for the sidebar
                             pageContents.style.marginLeft = "0px";
@@ -101,17 +101,26 @@
     </div>
     
     <div id="sidebar">
+        
         <br>
         <br>
         <button id="home" class="active" onclick="onClick('home.html', this)">Home</button>
         <br>
         <button id="rules" onclick="onClick('rules.html', this)">Rules</button>
         <br>
-        <button id="announcements" onclick="onClick('announcements.html', this)">Announcements</button>
+        <button id="news" onclick="onClick('news.html', this)">News</button>
     </div>
     
     <div id="pagecontents">
 
+    </div>
+    
+    <div id="contact">
+        <ul>
+            <li>Discord: </li>
+            <li>Newsletter: </li>
+            <li>Email: </li>
+        </ul>
     </div>
 
 
