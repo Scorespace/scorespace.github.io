@@ -13,7 +13,9 @@
                 $("#pagecontents").load("pages/home.html");
                 $("#menubutton").click(function(){
                     //Just don't. Please.
-                    if(window.matchMedia("(min-width:500px)").matches){
+                    if(window.matchMedia("(min-width:800px)").matches){
+                        $("#pagecontents").css("width", "100vw");
+                        $("#pagecontents").css("width", "-=250vw");
                         if(toggled){
                             $("#sidebar").animate({left: "-205px"});
                             $("#pagecontents").animate({left: "45px"});
@@ -22,21 +24,24 @@
                             $("#pagecontents").animate({left: "250px"});
                         }
                     } else{
+                        $("#pagecontents").css("width", "100vw");
                         if(toggled){
                             $("#sidebar").animate({top: "-291px"});
                             $("#pagecontents").animate({top: "38px"});
                         } else{
                             $("#sidebar").animate({top: "0"});
-                            $("#pagecontents").animate({top: "343px"});
+                            $("#pagecontents").animate({top: "330px"});
                         }
                     }
                     toggled = !toggled;
                 });
                 
                 $(window).resize(function(){
-                    if(window.matchMedia("(min-width:500px)").matches){
+                    if(window.matchMedia("(min-width:800px)").matches){
                         $("#sidebar").css("top", "0px");
-                        $("#pagecontents").css("top", "5px");
+                        $("#pagecontents").css("top", "0px");
+                        $("#pagecontents").css("width", "100vw");
+                        $("#pagecontents").css("width", "-=250px");
                         
                         if(toggled){
                             $("#sidebar").css("left", "0px");
@@ -48,10 +53,11 @@
                     } else{
                         $("#sidebar").css("left", "0px");
                         $("#pagecontents").css("left", "0px");
+                        $("#pagecontents").css("width", "100vw");
                         
                         if(toggled){
                             $("#sidebar").css("top", "0px");
-                            $("#pagecontents").css("top", "335px");
+                            $("#pagecontents").css("top", "330px");
                         } else{
                             $("#sidebar").css("top", "-291px");
                             $("#pagecontents").css("top", "38px");
@@ -77,7 +83,7 @@
         </div>
         
         <img id="logo" src="Assets/logo.png" width=100 height=100>
-        <button onclick="pageLoad('pages/home.html', this)">Home</button>
+        <button class="active" onclick="pageLoad('pages/home.html', this)">Home</button>
         <br>
         <button onclick="pageLoad('pages/rules.html', this)">Rules</button>
         <br>

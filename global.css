@@ -1,3 +1,8 @@
+body, html{
+    margin: 0;
+    padding: 0;
+
+}
 #sidebar{
     background-color: #09021f;
     
@@ -27,7 +32,11 @@
     display: block;
     position: absolute;
     left: 250px;
-    margin-left: 5px;
+    height: 100%;
+    margin-top: 0px;
+    padding: 0px;
+    top: 0;
+    width: 100%;
 }
 
 .active{
@@ -81,15 +90,51 @@ button:focus{
 }
 
 #pagecontents{
+    display: flex;
     font-family: Lato;
+    
+    width: calc(100vw - 250px);
+    height: 100vh;
+    
+    padding: 0;
+    margin: 0;
+    
+}
+
+.fullwidth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vmin;
+    text-align: center;
+    margin: 0;
+    top: 0;
+    left: 0;
+    font-size: calc(2vmax * 2vmin);
+}
+
+.fullwidth > div{
+    font-size: inherit;
+}
+
+.fullwidth > img{
+    display: inline-block;
+    position: relative;
+    float: right;
+    object-fit: cover;
+}
+
+fullwidth > p{
+    vertical-align: center;
 }
 
 b{
     font-family: inherit;
-    font-size: 25px;
+    font-size: 3vw;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 800px){
     #sidebar{
         width: 100%;
         height: 330px;
@@ -104,7 +149,8 @@ b{
     }
     #pagecontents{
         left: 0;
-        top: 335px;
+        top: 330px;
+        width: 100vw;
     }
     button{
         width: 100%;
@@ -113,6 +159,14 @@ b{
     #menubutton{
         right: 5px;
         bottom: 0px;
+    }
+    .fullwidth{
+        height: 250px;
+    }
+    .fullwidth > img{
+        float: none;
+        clear: none;
+        display: none;
     }
 }
 
