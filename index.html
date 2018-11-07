@@ -13,19 +13,21 @@
                 $("#pagecontents").load("pages/home.html");
                 $("#menubutton").click(function(){
                     //Just don't. Please.
-                    if(window.matchMedia("(min-width:800px)").matches){
+                    if(window.matchMedia("(min-width:900px)").matches){
                         $("#pagecontents").css("width", "100vw");
                         $("#pagecontents").css("width", "-=250px");
                         if(toggled){
                             $("#sidebar").animate({left: "-205px"});
                             $("#pagecontents").animate({left: "45px"});
-                            $("#pagecontents").animate({width: "100vw"}, function(){
-                                $("#pagecontents").css("width", "-=45px");
-                            });
+                            $("#pagecontents").css("width", "100vw");
+                            $("#pagecontents").css("width", "-=45px");
                             
                         } else{
                             $("#sidebar").animate({left: "0px"}); 
                             $("#pagecontents").animate({left: "250px"});
+                            $("#pagecontents").css("width", "100vw");
+                            $("#pagecontents").css("width", "-=250px"); 
+                            
                         }
                     } else{
                         $("#pagecontents").css("width", "100vw");
@@ -33,15 +35,17 @@
                             $("#sidebar").animate({top: "-291px"});
                             $("#pagecontents").animate({top: "38px"});
                         } else{
-                            $("#sidebar").animate({top: "0"});
-                            $("#pagecontents").animate({top: "330px"});
+                            $("#sidebar").animate({top: "0"}, function(){
+                                $("#pagecontents").animate({top: "330px"});
+                            });
+                            
                         }
                     }
                     toggled = !toggled;
                 });
                 
                 $(window).resize(function(){
-                    if(window.matchMedia("(min-width:800px)").matches){
+                    if(window.matchMedia("(min-width:900px)").matches){
                         $("#sidebar").css("top", "0px");
                         $("#pagecontents").css("top", "0px");
                         $("#pagecontents").css("width", "100vw");
@@ -93,5 +97,8 @@
         <br>
         <button onclick="pageLoad('pages/news.html', this)">News</button>
     </div>
-    <div id="pagecontents"></div>
+    
+    <div id="pagecontents">
+    
+    </div>
 </html>
