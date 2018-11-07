@@ -91,6 +91,7 @@ button:focus{
 
 #pagecontents{
     display: flex;
+    flex-direction: column;
     font-family: Lato;
     
     width: calc(100vw - 250px);
@@ -119,10 +120,9 @@ button:focus{
 }
 
 .fullwidth > img{
-    display: inline-block;
+    display: block;
     position: relative;
     float: right;
-    object-fit: cover;
 }
 
 fullwidth > p{
@@ -131,7 +131,7 @@ fullwidth > p{
 
 b{
     font-family: inherit;
-    font-size: 3vw;
+    font-size: 30px;
 }
 
 @media screen and (max-width: 800px){

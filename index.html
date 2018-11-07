@@ -15,10 +15,14 @@
                     //Just don't. Please.
                     if(window.matchMedia("(min-width:800px)").matches){
                         $("#pagecontents").css("width", "100vw");
-                        $("#pagecontents").css("width", "-=250vw");
+                        $("#pagecontents").css("width", "-=250px");
                         if(toggled){
                             $("#sidebar").animate({left: "-205px"});
                             $("#pagecontents").animate({left: "45px"});
+                            $("#pagecontents").animate({width: "100vw"}, function(){
+                                $("#pagecontents").css("width", "-=45px");
+                            });
+                            
                         } else{
                             $("#sidebar").animate({left: "0px"}); 
                             $("#pagecontents").animate({left: "250px"});
