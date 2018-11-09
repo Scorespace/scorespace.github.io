@@ -23,11 +23,11 @@
                             $("#pagecontents").css("width", "-=45px");
                             
                         } else{
-                            $("#sidebar").animate({left: "0px"}); 
-                            $("#pagecontents").animate({left: "250px"});
-                            $("#pagecontents").css("width", "100vw");
-                            $("#pagecontents").css("width", "-=250px"); 
-                            
+                            $("#sidebar").animate({left: "0px"}, function(){
+                                $("#pagecontents").css("width", "100vw");
+                                $("#pagecontents").css("width", "-=250px"); 
+                            }); 
+                            $("#pagecontents").animate({left: "250px"})
                         }
                     } else{
                         $("#pagecontents").css("width", "100vw");
