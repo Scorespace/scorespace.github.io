@@ -160,6 +160,18 @@ a{
     height: auto;
 }
 
+#discordbutton{
+    margin-top: -18.925px;
+}
+#discordinvitecontent{
+    margin-top: 0px;
+}
+
+#invitelogo{
+    width: 20px;
+    height: 20px;
+    margin-top: -1px;
+}
 
 @media screen and (max-width: 900px){
     #sidebar{
