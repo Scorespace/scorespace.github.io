@@ -56,6 +56,8 @@
                         } else{
                             $("#sidebar").css("left", "-205px");
                             $("#pagecontents").css("left", "45px");
+                            $("#pagecontents").css("width", "100vw");
+                            $("#pagecontents").css("width", "-=45px");
                         }
                     } else{
                         $("#sidebar").css("left", "0px");
@@ -95,6 +97,8 @@
         <button onclick="pageLoad('pages/rules.html', this)">Rules</button>
         <br>
         <button onclick="pageLoad('pages/news.html', this)">News</button>
+        <br>
+        <button onclick="pageLoad('pages/contact.html', this)">Contact</button>
     </div>
     
     <div id="pagecontents">
