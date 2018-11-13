@@ -173,6 +173,16 @@ a{
     margin-top: -1px;
 }
 
+.twitter-timeline{
+    background-color: #27094b;
+    color: red;
+    font-size: 10px;
+}
+
+.twitter-timeline a{
+    color: red;
+}
+
 @media screen and (max-width: 900px){
     #sidebar{
         width: 100%;
