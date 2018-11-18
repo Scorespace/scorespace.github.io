@@ -8,10 +8,13 @@
         
         <script>
             var toggled = true;
-            
+            var state = localStorage.getItem("state");
+            var activePage = localStorage.getItem("activepage");
+            var findAfterFinalSlash = "([^\/]+$)";
             
             $(document).ready(function(){
                 $("#pagecontents").load("pages/home.html");
+                
                 $("#menubutton").click(function(){
                     //Just don't. Please.
                     if(window.matchMedia("(min-width:900px)").matches){
@@ -38,7 +41,6 @@
                         } else{
                             $("#sidebar").animate({top: "0"});
                             $("#pagecontents").animate({top: "330px"});
-                            
                         }
                     }
                     toggled = !toggled;
@@ -80,7 +82,8 @@
             var pageLoad = function(page, obj){
                 $("#pagecontents").load(page);
                 $(".active").removeClass("active");
-                $(obj).addClass("active");
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
             }
         </script>
     </head>
@@ -93,13 +96,13 @@
         </div>
         
         <img id="logo" src="Assets/logo.png" width=100 height=100>
-        <button class="active" onclick="pageLoad('pages/home.html', this)">Home</button>
+        <button id="home" onclick="pageLoad('pages/home.html', this)" hashval="home">Home</button>
         <br>
-        <button onclick="pageLoad('pages/rules.html', this)">Rules</button>
+        <button id="rules" onclick="pageLoad('pages/rules.html', this)" hashval="rules">Rules</button>
         <br>
-        <button onclick="pageLoad('pages/news.html', this)">News</button>
+        <button id="news" onclick="pageLoad('pages/news.html', this)" hashval="news">News</button>
         <br>
-        <button onclick="pageLoad('pages/contact.html', this)">Contact</button>
+        <button id="contact" onclick="pageLoad('pages/contact.html', this)" hashval="contact">Contact</button>
     </div>
     
     <div id="pagecontents">
