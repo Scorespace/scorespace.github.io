@@ -16,7 +16,7 @@
                 
                 $("#menubutton").click(function(){
                     //Just don't. Please.
-                    if(window.matchMedia("(min-width:7in)").matches){
+                    if(window.matchMedia("(pointer: none)").matches){
                         $("#pagecontents").css("width", "100vw");
                         $("#pagecontents").css("width", "-=250px");
                         if(toggled){
@@ -46,7 +46,7 @@
                 });
                 
                 $(window).resize(function(){
-                    if(window.matchMedia("(min-width:7in)").matches){
+                    if(window.matchMedia("(pointer: none)").matches){
                         $("#sidebar").css("top", "0px");
                         $("#pagecontents").css("top", "0px");
                         $("#pagecontents").css("width", "100vw");
