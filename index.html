@@ -16,7 +16,7 @@
                 
                 $("#menubutton").click(function(){
                     //Just don't. Please.
-                    if(window.matchMedia("(any-hover: hover)").matches || window.matchMedia("(any-pointer: fine").matches){
+                    if(window.matchMedia("(any-hover: hover)").matches && window.matchMedia("(any-pointer: fine").matches){
                         $("#pagecontents").css("width", "100vw");
                         $("#pagecontents").css("width", "-=250px");
                         if(toggled){
@@ -46,7 +46,7 @@
                 });
                 
                 $(window).resize(function(){
-                    if(window.matchMedia("(any-hover: hover)").matches || window.matchMedia("(any-pointer: fine)").matches){
+                    if(window.matchMedia("(any-hover: hover)").matches && window.matchMedia("(any-pointer: fine)").matches){
                         $("#sidebar").css("top", "0px");
                         $("#pagecontents").css("top", "0px");
                         $("#pagecontents").css("width", "100vw");
