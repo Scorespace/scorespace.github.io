@@ -10,16 +10,13 @@
         
         <script>
             var toggled = true;
-            var state = localStorage.getItem("state");
-            var activePage = localStorage.getItem("activepage");
-            var findAfterFinalSlash = "([^\/]+$)";
             
             $(document).ready(function(){
                 $("#pagecontents").load("pages/home.html");
                 
                 $("#menubutton").click(function(){
                     //Just don't. Please.
-                    if(window.matchMedia("(min-width:900px)").matches){
+                    if(window.matchMedia("(min-width:7in)").matches){
                         $("#pagecontents").css("width", "100vw");
                         $("#pagecontents").css("width", "-=250px");
                         if(toggled){
@@ -49,7 +46,7 @@
                 });
                 
                 $(window).resize(function(){
-                    if(window.matchMedia("(min-width:900px)").matches){
+                    if(window.matchMedia("(min-width:7in)").matches){
                         $("#sidebar").css("top", "0px");
                         $("#pagecontents").css("top", "0px");
                         $("#pagecontents").css("width", "100vw");
