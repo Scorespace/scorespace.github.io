@@ -16,7 +16,7 @@
                 
                 $("#menubutton").click(function(){
                     //Just don't. Please.
-                    if(window.matchMedia("(hover: hover)").matches){
+                    if(window.matchMedia("(any-hover: hover)").matches){
                         $("#pagecontents").css("width", "100vw");
                         $("#pagecontents").css("width", "-=250px");
                         if(toggled){
@@ -46,7 +46,7 @@
                 });
                 
                 $(window).resize(function(){
-                    if(window.matchMedia("(hover: hover)").matches){
+                    if(window.matchMedia("(any-hover: hover)").matches){
                         $("#sidebar").css("top", "0px");
                         $("#pagecontents").css("top", "0px");
                         $("#pagecontents").css("width", "100vw");
@@ -94,7 +94,7 @@
             <div class="menuline"></div>
         </div>
         
-        <img id="logo" src="Assets/logo.png" width=100 height=100>
+            <img id="logo" src="Assets/logo.png" width=100 height=100>
             <button id="home" onclick="pageLoad('pages/home.html', this)" hashval="home">Home</button>
         <br>
         <button id="rules" onclick="pageLoad('pages/rules.html', this)" hashval="rules">Rules</button>
