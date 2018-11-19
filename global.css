@@ -183,7 +183,7 @@ a{
     color: red;
 }
 
-@media screen and (pointer: none){
+@media screen and (max-width: 7in){
     #sidebar{
         width: 100%;
         height: 330px;
