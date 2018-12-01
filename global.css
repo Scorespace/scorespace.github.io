@@ -198,6 +198,7 @@ a{
     #menubutton{
         right: 5px;
         bottom: 0px;
+        display: none;
     }
     .fullwidth{
         height: 250px;
