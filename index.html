@@ -2,8 +2,14 @@
 <html>
     <head>
         <link rel="stylesheet" href="global.css">
+        
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+        
+        
+        <script src="luxon.js"></script>
+        <script src="scripts/countdown.js"></script>
         
         <title>Scorespace Jam</title>
         <link rel="icon" type="image/png" href="Assets/icon.png">
@@ -88,23 +94,31 @@
     </head>
     
     <div id="sidebar">
+        
         <div id="menubutton">
             <div class="menuline"></div>
             <div class="menuline"></div>
             <div class="menuline"></div>
         </div>
         
-            <img id="logo" src="Assets/logo.png" width=100 height=100>
-            <button id="home" onclick="pageLoad('pages/home.html', this)" hashval="home">Home</button>
+        <img id="logo" src="Assets/logo.png" width=100 height=100>
+        
+        <div class="countdown" style="padding: 5px; text-align: center; font-family: inherit; font-size: inherit;" >
+            Loading...
+        </div>
+        <br>
+        <button id="home" onclick="pageLoad('pages/home.html', this)" hashval="home">Home</button>
+        <br>
+        <button id="jam" onclick="pageLoad('pages/jam.html', this)" hashval="news">Jam</button>
         <br>
         <button id="rules" onclick="pageLoad('pages/rules.html', this)" hashval="rules">Rules</button>
         <br>
-        <button id="news" onclick="pageLoad('pages/news.html', this)" hashval="news">News</button>
-        <br>
         <button id="contact" onclick="pageLoad('pages/contact.html', this)" hashval="contact">Contact</button>
+        <br>
+        
     </div>
     
     <div id="pagecontents">
-    
+        
     </div>
 </html>
