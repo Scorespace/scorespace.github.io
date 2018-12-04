@@ -170,6 +170,24 @@ a{
     margin-top: -1px;
 }
 
+#popupnotif{
+    font-family: Lato;
+    z-index: 0;
+    position: fixed;
+    background-color: #333333;
+    text-align: center;
+    width: 250px;
+    border-radius: 10px;
+    padding: 10px;
+    height: auto;
+    color: white;
+    
+    display: none;
+    
+    left: calc(50vw - 125px);
+    bottom: 50px;
+}
+
 @media (any-hover: none), (any-pointer: coarse){
     #sidebar{
         width: 100%;

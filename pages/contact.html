@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <div class="fullwidth" style="background-color: #2C2F33; text-align: center; height: 50%;">   
+    
+    <head>
+        <script>
+            var copyToClipboard = function(obj, str){
+                const el = document.createElement('textarea');
+                $("#popupnotif").stop(true)
+                                .fadeIn(500)
+                                .delay(500)
+                                .fadeOut(500);
+                
+                el.value = str;
+                document.body.appendChild(el);
+                el.select();
+                document.execCommand('copy');
+                document.body.removeChild(el);
+            }
+        </script>
+    </head>
+    
+    <div class="fullwidth" style="background-color: #2C2F33; text-align: center;">   
         <div>
             <br>
             <b>DISCORD</b>
@@ -17,7 +36,8 @@
         <div class="imgcont"><img src="Assets/discordlogo.png"></div>
         
     </div>
-    <div class="fullwidth" style="background-color: #1DA1F2; text-align: center; height: 50%;">   
+    
+    <div class="fullwidth" style="background-color: #1DA1F2; text-align: center;">   
         <div class="imgcont"><img src="Assets/twitterlogo.png"></div>
         <div>
             <br>
@@ -33,5 +53,45 @@
             </div>
         </div>
     </div>
+    
+    <div class="fullwidth" style="background-color: #AAAAAA; text-align: center;">   
+        
+        <div>
+            <br>
+            <b>EMAIL</b>
+            <br>
+            <div class="sectioncontent" style="padding: 5px; text-align: center;">
+                If you need to contact us to discuss a sponsorship, press coverage or other professional matter, feel free to email us at info@scorespace.net. We'll be sure to get back to you as soon as we can!
+                <br>
+                <br>
+                <button style="vertical-align: middle; text-align: center; padding: 5px; width: 155px; height: 29px; background-color: #AAAAAA; border-radius: 4px; font-size: 14px; font-family: Helvetica; outline: solid; outline-width: 1px; outline-color: darkslategray;" onclick="copyToClipboard(this, 'info@scorespace.net')">
+                   <div class="imgcont" id="discordinvitecontent"><img id="invitelogo" src="Assets/envelope.png">Send us an Email</div> 
+                </button>
+            </div>
+        </div>
+        <div class="imgcont"><img src="Assets/envelope.png"></div>
+    </div>
+    
+    <div class="fullwidth" style="background-color: #FF4500; text-align: center;">   
+        <div class="imgcont"><img src="Assets/redditlogo.png"></div>
+        <div>
+            <br>
+            <b>REDDIT</b>
+            <br>
+            <div class="sectioncontent" style="padding: 5px; text-align: center;">
+                If you want to get involved with the community, our Reddit is a great place to do that. You can view other's dev progress, post your own, or generally just discuss the jam.
+                <br>
+                <br>
+                <button id="discordbutton" style="vertical-align: middle; text-align: center; padding: 5px; width: 155px; height: 29px; background-color: #FF4500; border-radius: 4px; font-size: 14px; font-family: Helvetica; outline: solid; outline-width: 1px; outline-color: darkslategray;" onclick="window.open('https://reddit.com/r/scorespace');">
+                   <div class="imgcont" id="discordinvitecontent"><img id="invitelogo" src="Assets/redditlogo.png">Join us on Reddit</div> 
+                </button>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+    
+    
     
 </html>
