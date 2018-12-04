@@ -87,6 +87,7 @@ a<!DOCTYPE html>
             var pageLoad = function(page, obj){
                 $("#pagecontents").load(page);
                 $(".active").removeClass("active");
+                $(obj).addClass("active");
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
             }
@@ -107,13 +108,13 @@ a<!DOCTYPE html>
             Loading...
         </div>
         <br>
-        <button id="home" onclick="pageLoad('pages/home.html', this)" hashval="home">Home</button>
+        <button id="home" onclick="pageLoad('pages/home.html', this)" class="active">Home</button>
         <br>
-        <button id="jam" onclick="pageLoad('pages/jam.html', this)" hashval="news">Jam</button>
+        <button id="jam" onclick="pageLoad('pages/jam.html', this)">Jam</button>
         <br>
-        <button id="rules" onclick="pageLoad('pages/rules.html', this)" hashval="rules">Rules</button>
+        <button id="rules" onclick="pageLoad('pages/rules.html', this)">Rules</button>
         <br>
-        <button id="contact" onclick="pageLoad('pages/contact.html', this)" hashval="contact">Contact</button>
+        <button id="contact" onclick="pageLoad('pages/contact.html', this)">Contact</button>
         <br>
         
     </div>
