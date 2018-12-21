@@ -41,11 +41,11 @@ a<!DOCTYPE html>
                     } else{
                         $("#pagecontents").css("width", "100vw");
                         if(toggled){
-                            $("#sidebar").animate({top: "-480px"});
+                            $("#sidebar").animate({top: "-625px"});
                             $("#pagecontents").animate({top: "38px"});
                         } else{
                             $("#sidebar").animate({top: "0"});
-                            $("#pagecontents").animate({top: "517.5px"});
+                            $("#pagecontents").animate({top: "625px"});
                         }
                     }
                     toggled = !toggled;
@@ -72,13 +72,8 @@ a<!DOCTYPE html>
                         $("#pagecontents").css("left", "0px");
                         $("#pagecontents").css("width", "100vw");
                         
-                        if(toggled){
-                            $("#sidebar").css("top", "0px");
-                            $("#pagecontents").css("top", "517.5px");
-                        } else{
-                            $("#sidebar").css("top", "-480px");
-                            $("#pagecontents").css("top", "38px");
-                        }
+                        $("#sidebar").css("top", "0px");
+                        $("#pagecontents").css("top", "625px");
                     }
                 });
 
