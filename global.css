@@ -4,6 +4,7 @@ body, html{
     overflow-x: hidden;
     background-color: #27094b;
 }
+
 #sidebar{
     background-color: #09021f;
     
@@ -32,18 +33,23 @@ body, html{
 #pagecontents{
     display: block;
     position: absolute;
+    
+    top: 0;
     left: 250px;
-    height: auto;
+    width: calc(100vw - 250px);
+    height: 100vh;
+    
     margin-top: 0px;
     padding: 0px;
-    top: 0;
-    width: 100%;
+    
     color: black;
-}
-
-.active{
-    background-color: #001a47;
-    color: turquoise;
+    
+    display: flex;
+    flex-direction: column;
+    font-family: Lato;
+    
+    padding: 0;
+    margin: 0;
 }
 
 button{
@@ -59,9 +65,9 @@ button{
     text-align: left;
 }
 
-button:hover{
-    color: turquoise;
+button.active, button:hover{
     background-color: #001a47;
+    color: turquoise;
     cursor: pointer;
 }
 
@@ -87,29 +93,18 @@ button:focus{
     margin-top: 6px;
 }
 
-#pagecontents{
-    display: flex;
-    flex-direction: column;
-    font-family: Lato;
-    
-    width: calc(100vw - 250px);
-    height: 100vh;
-    
-    padding: 0;
-    margin: 0;
-    
-}
-
 .fullwidth{
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 25vw;
     text-align: center;
-    margin: 0;
+    align-items: center;
+    
     top: 0;
     left: 0;
+    width: 100%;
+    height: 25vw;
+    margin: 0;
+    
     font-size: 1.5vw;
     flex-shrink: 0;
     flex-grow: 0;
@@ -150,12 +145,6 @@ b{
 
 a{
     font-size: inherit;
-}
-
-.box{
-    outline: 50px;
-    width: auto;
-    height: auto;
 }
 
 #discordbutton{
@@ -217,30 +206,36 @@ a{
         font-size: 25px;
 
     }
+    
     #pagecontents{
         left: 0;
         top: 625px;
         width: 100vw;
         
     }
+    
     button{
         width: 100%;
         text-align: inherit;
     }
+    
     #menubutton{
         right: 5px;
         bottom: 0px;
         display: none;
     }
+    
     .fullwidth{
         height: 250px;
         font-size: 25px;
     }
+    
     img:not(.fixed){
         float: none;
         clear: none;
         display: none;
     }  
+    
     img{
         display: auto;
         clear: auto;
@@ -269,9 +264,11 @@ a{
         float: none;
         display: none;
     }
+    
     .fullwidth{
         height: 250px;   
     }
+    
     .sectioncontent, b{
         font-size: 15px;
     }
