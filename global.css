@@ -3,7 +3,6 @@ body, html{
     padding: 0;
     overflow-x: hidden;
     background-color: #27094b;
-    
 }
 #sidebar{
     background-color: #09021f;
@@ -40,10 +39,6 @@ body, html{
     top: 0;
     width: 100%;
     color: black;
-}
-
-.sectioncontent{
-    margin-right: 15px;
 }
 
 .active{
@@ -105,15 +100,12 @@ button:focus{
     
 }
 
-.sectioncontents{
-}
-
 .fullwidth{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 300px;
+    height: calc(25vw);
     text-align: center;
     margin: 0;
     top: 0;
@@ -129,21 +121,31 @@ button:focus{
     color: inherit;
 }
 
+.sectioncontent{
+    margin-right: 15px;
+    font-weight: 100;
+    opacity: 0.9;
+}
+
 .imgcont{
     display: block;
 }
 
 img{
     float: left;
+    object-fit: cover;
+    width: 20vw;
+    height: 20vw;
+}
+
+img.fixed{
     width: 250px;
     height: 250px;
-    object-fit: cover;
-    
 }
 
 b{
     font-family: inherit;
-    font-size: 3vw;
+    font-size: 1.75vw;
 }
 
 a{
@@ -234,13 +236,14 @@ a{
         height: 250px;
         font-size: 25px;
     }
-    img{
+    img:not(.fixed){
         float: none;
         clear: none;
         display: none;
-    }
-    #logo{
-        display: inline;
+    }  
+    img{
+        display: auto;
+        clear: auto;
         position: relative;
         left: 5px;
         margin-bottom: -50px;
@@ -266,4 +269,11 @@ a{
         float: none;
         display: none;
     }
+    .fullwidth{
+        height: 250px;   
+    }
+    .sectioncontent, b{
+        font-size: 15px;
+    }
+    
 }
