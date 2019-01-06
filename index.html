@@ -38,15 +38,6 @@ a<!DOCTYPE html>
                             }); 
                             $("#pagecontents").animate({left: "250px"})
                         }
-                    } else{
-                        $("#pagecontents").css("width", "100vw");
-                        if(toggled){
-                            $("#sidebar").animate({top: "-625px"});
-                            $("#pagecontents").animate({top: "38px"});
-                        } else{
-                            $("#sidebar").animate({top: "0"});
-                            $("#pagecontents").animate({top: "625px"});
-                        }
                     }
                     toggled = !toggled;
                 });
@@ -67,13 +58,6 @@ a<!DOCTYPE html>
                             $("#pagecontents").css("width", "100vw");
                             $("#pagecontents").css("width", "-=45px");
                         }
-                    } else{
-                        $("#sidebar").css("left", "0px");
-                        $("#pagecontents").css("left", "0px");
-                        $("#pagecontents").css("width", "100vw");
-                        
-                        $("#sidebar").css("top", "0px");
-                        $("#pagecontents").css("top", "625px");
                     }
                 });
 
@@ -97,10 +81,9 @@ a<!DOCTYPE html>
             <div class="menuline"></div>
         </div>
         
-        <img class="fixed" src="Assets/logo.png" width=100 height=100>
+        <img class="fixed" src="Assets/logo.png" style="left: 37.5%;" width=100 height=100>
         
-        <div style="padding: 5px; text-align: center; font-family: inherit; font-size: inherit;" >
-            DEV TIME! JOIN THE JAM!
+        <div class="countdown" style="padding: 5px; text-align: center; font-family: inherit; font-size: inherit;" >
         </div>
         <br>
         <button id="home" onclick="pageLoad('pages/home.html', this)" class="active">Home</button>

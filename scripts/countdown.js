@@ -1,4 +1,4 @@
-/*var startJam = new Date('Jan 4, 2019 9:00 PM PST');
+var startJam = new Date('Jan 4, 2019 9:00 PM PST');
 var endDev = new Date('Jan 7, 2019 9:00 PM PST')
 var startRate = new Date('Jan 10, 2019 9:00 PM PST');
 var startGamer = new Date('Jan 11, 2019 9:00 PM PST');
@@ -12,6 +12,7 @@ var timer;
 
 var countdowns = document.getElementsByClassName("countdown");
 
+alert("large oofus");
 
 function showTimeUntilJam() {
     var now = new Date();
@@ -84,6 +85,7 @@ function showTimeUntilJam() {
                 }
                 
              else{
+                
                 countdown.innerHTML = "DEV TIME ENDS IN: <br>";
                 countdown.innerHTML += endDevDays + 'd ';
                 countdown.innerHTML += endDevHours + 'hr ';
@@ -103,4 +105,4 @@ function showTimeUntilJam() {
         
 }
 
-timer = setInterval(showTimeUntilJam, _second);*/
+timer = setInterval(showTimeUntilJam, _second);
