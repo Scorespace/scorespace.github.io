@@ -12,8 +12,6 @@ var timer;
 
 var countdowns = document.getElementsByClassName("countdown");
 
-alert("large oofus");
-
 function showTimeUntilJam() {
     var now = new Date();
     
@@ -61,7 +59,7 @@ function showTimeUntilJam() {
                         if(gamerEndDistance < 0){
                             countdown.innerHTML = "JAM OVER!";
                         } else{
-                            countdown.innerHTML = "GAME TIME ENDS IN: <br>";
+                            countdown.innerHTML = "GAME TIME ENDS IN:<br> ";
                             countdown.innerHTML += gameEndDays + 'd ';
                             countdown.innerHTML += gameEndHours + 'hr ';
                             countdown.innerHTML += gameEndMinutes + 'm ';
@@ -69,7 +67,7 @@ function showTimeUntilJam() {
                         }
 
                     } else{
-                        countdown.innerHTML = "GAME TIME STARTS IN: <br>";
+                        countdown.innerHTML = "GAME TIME STARTS IN:<br>";
                         countdown.innerHTML += gameStartDays + 'd ';
                         countdown.innerHTML += gameStartHours + 'hr ';
                         countdown.innerHTML += gameStartMinutes + 'm ';
@@ -77,16 +75,16 @@ function showTimeUntilJam() {
                     }
 
                 } else{
-                    countdown.innerHTML = "RATING STARTS IN: <br>";
+                    countdown.innerHTML = "RATING STARTS IN:<br>";
                     countdown.innerHTML += rateDays + 'd ';
                     countdown.innerHTML += rateHours + 'hr ';
                     countdown.innerHTML += rateMinutes + 'm ';
                     countdown.innerHTML += rateSeconds + 's ';  
                 }
                 
-             else{
+            } else{
                 
-                countdown.innerHTML = "DEV TIME ENDS IN: <br>";
+                countdown.innerHTML = "DEV TIME ENDS IN:<br>";
                 countdown.innerHTML += endDevDays + 'd ';
                 countdown.innerHTML += endDevHours + 'hr ';
                 countdown.innerHTML += endDevMinutes + 'm ';
@@ -94,7 +92,7 @@ function showTimeUntilJam() {
             }
             
         } else{
-                countdown.innerHTML = "JAM STARTS IN: <br>";
+                countdown.innerHTML = "JAM STARTS IN: ";
                 countdown.innerHTML += days + 'd ';
                 countdown.innerHTML += hours + 'hr ';
                 countdown.innerHTML += minutes + 'm ';

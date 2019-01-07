@@ -141,9 +141,10 @@ img{
     height: 20vw;
 }
 
-img.fixed{
+#logo{
     width: 250px;
     height: 250px;
+    position: relative;
 }
 
 img.flipped{
@@ -159,26 +160,17 @@ a{
     font-size: inherit;
 }
 
-#discordbutton{
+.discordbutton{
     margin-top: 0px;
     vertical-align: middle; 
     text-align: center; 
-    font-size: 14px;
+    font-size: 20px;
     padding: 5px; 
-    width: auto; 
+    width: 3.1cm; 
     height: auto; 
     border-radius: 4px;
     font-family: Helvetica;
-}
-
-#discordinvitecontent{
-    margin-top: 0px;
-}
-
-#invitelogo{
-    width: 20px;
-    height: 20px;
-    margin-top: -1px;
+    margin: 2.5px;
 }
 
 #popupnotif{
@@ -199,10 +191,14 @@ a{
     bottom: 50px;
 }
 
+.countdown{
+    width: 250px;
+}
+
 @media (any-hover: none), (any-pointer: coarse){
     #sidebar{
         width: 100%;
-        height: 585px;
+        height: 790px;
         z-index: 1;
         
         top: 0;
@@ -215,12 +211,14 @@ a{
         text-align: center;
         
         font-size: 25px;
+        margin: 0;
 
     }
     
     #pagecontents{
         position: relative;
-        left: 0;
+        margin: 0px;
+        margin-left: -250px;
         width: 100vw;
         
     }
@@ -239,6 +237,7 @@ a{
     
     .fullwidth{
         height: 500px;
+        width: 100vw;
         font-size: 40px;
     }
     
@@ -248,26 +247,25 @@ a{
         display: none;
     }  
     
-    img{
-        
-    }
-    
     img.fixed{
-        position: static;
-        width: 400px;
-        height: 400px;
+        position: absolute;
+        left: calc(50% - 125px);
+        top: 50px;
+        width: 5cm;
+        height: 5cm;
         display: auto;
         clear: auto;
-        margin-left: calc(50vw - 195px);
         margin-top: -100px;
         margin-bottom: -100px;
     }
     
-    #discordbutton{
-        width: auto;
-        height: auto;
+    .discordbutton{
+        width: 400px;
+        height: 75px;
         
-        font-size: 25px;
+        font-size: inherit;
+        margin-bottom: 10px;
+        text-align: center;
         
         margin-top: 0px;
     }
@@ -279,10 +277,25 @@ a{
     b{
         font-size: 50px;
     }
-
+    
+    .countdown{
+        width: 100vw;
+        padding-top: 300px;
+        height: 80px;
+        font-size: 35px;
+    }
+    
+    #logo{
+        width: 500px;
+        height: 500px;
+        left: calc(50% - 250px);
+        top: 0px;
+    }
+    
+    
 }
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 780px) and (any-pointer: fine){
     img:not(.fixed){
         float: none;
         display: none;
