@@ -1,5 +1,0 @@
-Logo Blue - #00C0FF
-Logo Purple - #7402FF
-Dark Purple - #09021f
-Slightly Less Dark Purple - #27094b
-Background Gray - #AAAAAA

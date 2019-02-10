@@ -1,104 +1,93 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="global.css">
-        
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-        
-        <script src="scripts/countdown.js"></script>
-        
-        <title>Scorespace Jam</title>
-        <link rel="icon" type="image/png" href="Assets/icon.png">
-        
-        <script>
-            var toggled = true;
-            
-            $(document).ready(function(){
-                $("#pagecontents").load("pages/home.html");
-                
-                $("#menubutton").click(function(){
-                    //Just don't. Please.
-                    if(window.matchMedia("(any-hover: hover)").matches || window.matchMedia("(any-pointer: fine").matches){
-                        $("#pagecontents").css("width", "100vw");
-                        $("#pagecontents").css("width", "-=250px");
-                        if(toggled){
-                            $("#sidebar").animate({left: "-205px"});
-                            $("#pagecontents").animate({left: "45px"});
-                            $("#pagecontents").css("width", "100vw");
-                            $("#pagecontents").css("width", "-=45px");
-                            
-                        } else{
-                            $("#sidebar").animate({left: "0px"}, function(){
-                                $("#pagecontents").css("width", "100vw");
-                                $("#pagecontents").css("width", "-=250px"); 
-                            }); 
-                            $("#pagecontents").animate({left: "250px"})
-                        }
-                    }
-                    toggled = !toggled;
-                });
-                
-                $(window).resize(function(){
-                    if(window.matchMedia("(any-hover: hover)").matches || window.matchMedia("(any-pointer: fine)").matches){
-                        $("#sidebar").css("top", "0px");
-                        $("#pagecontents").css("top", "0px");
-                        $("#pagecontents").css("width", "100vw");
-                        $("#pagecontents").css("width", "-=250px");
-                        
-                        if(toggled){
-                            $("#sidebar").css("left", "0px");
-                            $("#pagecontents").css("left", "250px");
-                        } else{
-                            $("#sidebar").css("left", "-205px");
-                            $("#pagecontents").css("left", "45px");
-                            $("#pagecontents").css("width", "100vw");
-                            $("#pagecontents").css("width", "-=45px");
-                        }
-                    }
-                });
 
-            });
-            
-            var pageLoad = function(page, obj){
-                $("#pagecontents").load(page);
-                $(".active").removeClass("active");
-                $(obj).addClass("active");
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-        </script>
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> 
+        
+        
+        
+        <link rel="stylesheet" href="css/global.css">
+        
     </head>
     
-    <div id="sidebar">
+    <body>
         
-        <div id="menubutton">
-            <div class="menuline"></div>
-            <div class="menuline"></div>
-            <div class="menuline"></div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-darkblue2 position-fixed w-100" style="z-index: 100;">
+            
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <br>
+            <img src="assets/logo.png" height=75 style="transform: scale(1.2); margin-right: 15px; margin-left: 15px;" class="d-none d-lg-block">
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="bg-blue" href="index.html">Home</a></li>
+                    <li class="nav-item active"><a href="jam.html">Jam</a></li>
+                    <li class="nav-item active"><a href="gamedev.html">Gamedevs</a></li>
+                    <li class="nav-item active"><a href="streamer.html">Streamers</a></li>
+                    <li class="nav-item active"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="container-fluid">
+            
+                
+            <div class="col" style="margin-top: 150px; position: fixed; margin-right: 0;">
+                <b>A game jam for developers and streamers.</b>
+                <br>
+                <video controls>
+                    <source src="assets/promo.mp4" type="video/mp4">
+                </video>
+                <br>
+                <a class="bg-purple button" href="contact.html">
+                    JOIN
+                </a>
+            </div>
+                
+            
+            <div class="row position-absolute" style="top: 100vh;">
+                <div class="col bg-purple">
+                    <img src="assets/logo.png" class="img-fluid"><br>
+                    <b>ABOUT</b>
+                    <p>Scorespace is an innovative type of gamejam in which the wider community outside of game developers are able to get involved too. The jam consists of two halves: gamedevs and streamers. The jam begins with the gamedevs and ends with the streamers.</p>
+                </div>
+                
+                <div class="col">
+                    
+                     <div class="row">
+                        <div class="col vh-50 bg-devblue d-flex">
+                            <div>
+                                <b>GAMEDEVS</b><br>
+                                <p>Gamedevs are tasked with competing in the first half of the jam. In this half, they are required to develop a game in a limited amount of time (72 hours.) The top three games are chosen, and then placed in a highlight video made for the specific jam.</p>
+                            </div>
+                        </div>
+                      </div>
+
+                    <div class="row">
+                        <div class="col d-flex vh-50 bg-streamerpurple">
+                            <div>
+                                <b>STREAMERS</b>
+                                <p>Streamers are tasked with competing against each other in the second half of the jam. In this half, they are required to obtain the highest score in one of the winning three games and submit a video recording of them doing so.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
         </div>
         
-        <div id="logocont"><img class="fixed" id="logo" src="Assets/logo.png" style=""></div>
-        <div class="countdown" style="height: auto; text-align: center;">
-            Loading...
-        </div>
-        <br>
-        <button id="home" onclick="pageLoad('pages/home.html', this)" class="active">Home</button>
-        <br>
-        <button id="jam" onclick="pageLoad('pages/jam.html', this)">Jam</button>
-        <br>
-        <button id="rules" onclick="pageLoad('pages/rules.html', this)">Rules</button>
-        <br>
-        <button id="contact" onclick="pageLoad('pages/contact.html', this)">Contact</button>
-        <br>
         
-    </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        
+        <script src="js/navbar.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </body>
     
-    <div id="pagecontents">
-        
-    </div>
-    <div id="popupnotif">
-        Copied to clipboard.
-    </div>
 </html>
