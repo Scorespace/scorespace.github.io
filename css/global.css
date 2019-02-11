@@ -182,4 +182,33 @@ html, body{
             line-height: 75px;
         }
     }
+
+    #scrollarrow{
+        position: fixed;
+        
+        animation: pulsate 3s infinite;
+        
+        width: 50px;
+        height: 50px;
+        
+        top: 100vh;
+        left: 50vw;
+        
+        transform: translate(-65%, -150%);
+        
+        font-weight: 900;
+        cursor: default;
+        
+        border-radius: 100%;
+    }
+
+    @keyframes pulsate{
+        10%{
+            box-shadow: 0px 0px 0px 10px rgba(100, 100, 100, 0.8);
+        }
+        
+        30%{
+            box-shadow: 0px 0px 0px 10px rgba(100, 100, 100, 0);
+        }
+    }
 /*End of Misc*/
