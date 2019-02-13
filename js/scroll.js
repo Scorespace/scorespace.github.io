@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(document).bind('wheel', function(){
-        if($(window).scrollTop() < 50){
+        if($(window).scrollTop() == 0){
             $("#scrollarrow").stop().fadeIn();
         } else{
             $("#scrollarrow").stop().fadeOut();
