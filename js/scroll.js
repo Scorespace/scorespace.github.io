@@ -6,4 +6,10 @@ $(document).ready(function(){
             $("#scrollarrow").stop().fadeOut();
         }
     });
+    
+    $("#scrollarrow").click(function(){
+        $("#scrollarrow").stop().fadeOut();
+        $('.navbar').slideUp();
+        $('html, body').animate({scrollTop: $(window).innerHeight() + "px"});
+    });
 });
