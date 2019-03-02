@@ -43,9 +43,6 @@ $(document).ready(function(){
             //Jam starts when?
             $(".countdown").html("<b>" + "JAM STARTS IN: " + devStart.days + devStart.hours + devStart.minutes + devStart.seconds + "</b>"); 
         }
-        
-        
-
     }, 1000);
 });
 

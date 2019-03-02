@@ -47,6 +47,8 @@ html, body{
     [class^="col"]{
         text-align: center;
         overflow: visible;
+        padding-right: 20px;
+        margin: 0px;
     }
 
     .d-flex{
@@ -55,11 +57,11 @@ html, body{
     }
     
     .vh-100{
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .vh-50{
-        height: 50vh;
+        min-height: 50vh;
     }
 
     @media screen and (any-pointer: coarse) and (max-width: 992px){
@@ -176,6 +178,7 @@ html, body{
 
     @media screen and (any-pointer: coarse) and (max-width: 992px){
         .nav-item > a{
+            overflow-y: hidden;
             height: 100px;   
             text-align: center;
             margin: 10px;
@@ -211,5 +214,9 @@ html, body{
         30%{
             box-shadow: 0px 0px 0px 10px rgba(100, 100, 100, 0);
         }
+    }
+
+    .flipped{
+        transform: scaleX(-1);
     }
 /*End of Misc*/
