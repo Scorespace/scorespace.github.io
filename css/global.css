@@ -110,7 +110,7 @@ html, body{
 
 /*Text*/
     b{
-        font-size: 40px;
+        font-size: 35px;
     }
 
     p, u{
@@ -150,10 +150,11 @@ html, body{
         display: block;
         margin: 5px;
         margin-left: 25px;
+        width: 150px;
         
         padding: 10px;
         
-        height: 100%;
+        padding-top: calc(50px - 1em);
         
         cursor: pointer;
     }
