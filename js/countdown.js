@@ -16,13 +16,13 @@ function getTimeRemaining(endtime){
 
 $(document).ready(function(){
     setInterval(function(){
-        var devStart = getTimeRemaining("03/01/19 21:00 PST")
-        var devEnd = getTimeRemaining("03/04/19 21:00 PST")
+        var devStart = getTimeRemaining("05/03/19 21:00 PST")
+        var devEnd = getTimeRemaining("05/06/19 21:00 PST")
         
-        var rateStart = getTimeRemaining("03/07/19 21:00 PST")
+        var rateEnd = getTimeRemaining("05/09/19 21:00 PST")
         
-        var gameStart = getTimeRemaining("03/08/19 21:00 PST")
-        var gameEnd = getTimeRemaining("03/09/19 21:00 PST")
+        var gameStart = getTimeRemaining("05/10/19 21:00 PST")
+        var gameEnd = getTimeRemaining("05/12/19 21:00 PST")
         
         if(gameEnd.total < 0){
             //Jam ended
@@ -30,12 +30,12 @@ $(document).ready(function(){
         } else if(gameStart.total < 0){
             //Gamers end when?
             $(".countdown").html("<b>" + "GAMERS END IN: " + gameEnd.days + gameEnd.hours + gameEnd.minutes + gameEnd.seconds + "</b>"); 
-        } else if(rateStart.total < 0){
+        } else if(rateEnd.total < 0){
             //Rating ends when?
             $(".countdown").html("<b>" + "RATING ENDS IN: " + gameStart.days + gameStart.hours + gameStart.minutes + gameStart.seconds + "</b>");  
         } else if(devEnd.total < 0){
             //Rating starts when?
-            $(".countdown").html("<b>" + "RATING STARTS IN: " + rateStart.days + rateStart.hours + rateStart.minutes + rateStart.seconds + "</b>");  
+            $(".countdown").html("<b>" + "RATING STARTS IN: " + rateEnd.days + rateEnd.hours + rateEnd.minutes + rateEnd.seconds + "</b>");  
         } else if(devStart.total < 0){
             //Dev ends when?
             $(".countdown").html("<b>" + "DEV TIME ENDS IN: " + devEnd.days + devEnd.hours + devEnd.minutes + devEnd.seconds + "</b>");  
