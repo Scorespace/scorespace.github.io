@@ -16,13 +16,13 @@ function getTimeRemaining(endtime){
 
 $(document).ready(function(){
     setInterval(function(){
-        var devStart = getTimeRemaining("05/03/19 21:00 PST")
-        var devEnd = getTimeRemaining("05/06/19 21:00 PST")
+        var devStart = getTimeRemaining("06/21/19 21:00 PST")
+        var devEnd = getTimeRemaining("06/24/19 21:00 PST")
         
-        var rateEnd = getTimeRemaining("05/09/19 21:00 PST")
+        var rateEnd = getTimeRemaining("06/27/19 21:00 PST")
         
-        var gameStart = getTimeRemaining("05/10/19 21:00 PST")
-        var gameEnd = getTimeRemaining("05/12/19 21:00 PST")
+        var gameStart = getTimeRemaining("06/28/19 21:00 PST")
+        var gameEnd = getTimeRemaining("06/30/19 21:00 PST")
         
         if(gameEnd.total < 0){
             //Jam ended
