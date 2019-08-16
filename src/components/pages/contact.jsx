@@ -18,7 +18,7 @@ function Contact(props){
         <div>
             <section style={{background:`url(${Background})`, width: "100%", height: "auto", position: "absolute", backgroundSize: "100%", backgroundPosition: "0% -53%"}}>
                 <TopbarMargin/>
-                <Jumbotron style={{height: "75vh"}}>
+                <Jumbotron style={{height: "auto"}}>
                     <img src={Mailbox} width={200} style={{marginBottom: 40}}/>
                     <h2>Contact</h2>
                     <p>

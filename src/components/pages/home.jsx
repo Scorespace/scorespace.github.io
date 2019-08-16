@@ -14,7 +14,7 @@ function Home(props){
         <div>  
             <section className="Banner" style={{background:`url(${Background})`, height: "auto", position: "relative", backgroundSize: "100%", backgroundPositionY: "-10%"}}>
                 <TopbarMargin/>
-                <Jumbotron style={{height: "150vh"}}>
+                <Jumbotron style={{height: "auto"}}>
                     <h2>A two-sided competition made for game developers and streamers.</h2>
                     <p>
                     ScoreSpace aims to create a platform that connects gamedevs and streamers to create a community of creators helping each other grow. It is the only gamejam that involves streamers after the games are made. 

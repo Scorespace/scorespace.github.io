@@ -12,7 +12,7 @@ function Gamedevs(props){
         <div>
             <section style={{background:`url(${Background})`, height: "auto", position: "absolute", backgroundSize: "100%", backgroundPosition: "0% -53%"}}>
                 <TopbarMargin/>
-                <Jumbotron style={{height: "110vh"}}>
+                <Jumbotron style={{height: "auto"}}>
                     <img src={PC} width={200} style={{marginBottom: 40, marginTop: "51px"}}/>
                     <h2>Gamedevs</h2>
                     <p>
