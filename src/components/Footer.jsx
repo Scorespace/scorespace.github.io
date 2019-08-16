@@ -5,7 +5,8 @@ import Discord from '../assets/discord_logo.png';
 var footerStyle = {
     color: "gray",
     fontSize: "15px",
-    textDecoration: "none"
+    textDecoration: "none",
+    margin: "0";
 }
 
 function Footer(){
@@ -16,7 +17,7 @@ function Footer(){
                     <p style={footerStyle}>
                     <a style={footerStyle} href="https://invite.gg/scorespace">Discord</a> {" - "}
                     <a style={footerStyle} href="https://twitter.com/scorespacejam">Twitter</a> {" - "}
-                    <a style={footerStyle} href="mailto:info@scorespace.net">Email</a>
+                    <a style={footerStyle} href="mailto:info@scorespace.net">Email</a> {" - "}
                     </p>
                 </Column>
             </Row>
