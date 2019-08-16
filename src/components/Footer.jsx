@@ -5,7 +5,8 @@ import Discord from '../assets/discord_logo.png';
 var footerStyle = {
     color: "gray",
     fontSize: "15px",
-    textDecoration: "none"
+    textDecoration: "none",
+    margin: "0"
 }
 
 function Footer(){
