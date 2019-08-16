@@ -6,7 +6,8 @@ var footerStyle = {
     color: "gray",
     fontSize: "15px",
     textDecoration: "none",
-    margin: "0"
+    margin: "0",
+    padding: "0"
 }
 
 function Footer(){
