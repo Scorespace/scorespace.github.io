@@ -1,6 +1,0 @@
-Logo Blue (Dev) - #00C0FF
-Logo Purple (Streamer) - #7402FF
-
-Dark Blue - #09021f
-Dark Purple - #27094b
-Light Purple - #3f2264
