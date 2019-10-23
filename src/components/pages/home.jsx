@@ -8,7 +8,7 @@ import Jumbotron from '../Jumbotron';
 import Button from '../Button';
 import QuoteBox from '../QuoteBox';
 import Footer from '../Footer';
-
+    
 function Home(props){
     return(
         <div>  
@@ -20,11 +20,17 @@ function Home(props){
                     ScoreSpace aims to create a platform that connects gamedevs and streamers to create a community of creators helping each other grow. It is the only gamejam that involves streamers after the games are made. 
                     </p>
 
-                    <Button onClick={() => window.open("https://itch.io/jam/scorejam6")} style={{backgroundColor: "#00C0FF", margin: 50, borderRadius: 10, fontSize: 20}}>
-                        <b>Join</b>
+                    <span>
+                    <Button onClick={() => window.open("https://invite.gg/scorespace")} style={{display: "inline-flex", flexDirection: "column", width: 200, backgroundColor: "#2C2F33", margin: 20, marginBottom: 0, borderRadius: 10, fontSize: 20}}>
+                        <b>Join our Discord</b>
                     </Button>
 
-                    <iframe width="980" height="551" src="https://www.youtube.com/embed/Xo6VWiJkOIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <Button onClick={() => window.open("hhttps://itch.io/jam/polyspace1")} style={{display: "inline-flex", flexDirection: "column", width: 200, backgroundColor: "#00C0FF", margin: 20, borderRadius: 10, fontSize: 20}}>
+                        <b>Most Recent Jam</b>
+                    </Button>
+                    </span>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Xo6VWiJkOIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <BaseMargin/>
                 </Jumbotron>
 

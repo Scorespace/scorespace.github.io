@@ -22,10 +22,10 @@ function Gamedevs(props){
                     <BaseMargin/>
                 </Jumbotron>
 
-                <Jumbotron style={{backgroundColor: "white"}} pStyle={{color: "black"}}>
+                <Jumbotron style={{backgroundColor: "white"}} pStyle={{color: "black", textAlign: "left"}}>
                     <h2>Rules</h2>
                     <p>
-                    <ol>
+                        <ol style={{textAlign: "left"}}>
                             <li>All games must include a leaderboard system (offline or online) so that the streamers can compete for the highscore if you happen to win the contest.</li>
                             <li>You can compete in teams of up to 4. You can find other people to team up with on our Crowdforge page.</li>
                             <li>All game engines (and frameworks) are allowed, as long as no actual game content / mechanics are implemented before the jam.</li>

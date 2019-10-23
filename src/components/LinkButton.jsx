@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Button from './Button';
+import NavLink from 'react-router-dom/NavLink';
 import {withRouter} from 'react-router-dom';
 
 class LinkButton extends Component{
@@ -8,19 +8,14 @@ class LinkButton extends Component{
         this.state = {
             redirect: false
         };
-
-        this.handleClick = () => {
-            window.scrollTo(0, 0);
-            this.props.history.push(this.props.link)
-        }
     }
 
     render(){
     
         return(
-            <Button onClick={this.handleClick}>
+            <NavLink exact={this.props.exact} className="Button" to={this.props.link}>
                 {this.props.children}
-            </Button>
+            </NavLink>
         );
     }
 }

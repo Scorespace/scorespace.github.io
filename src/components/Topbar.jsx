@@ -17,7 +17,7 @@ function Topbar(){
             <img alt="ScoreSpace's logo" src={logo} width={125} height={125} className="Logo"/>
 
             <Nav>
-                <LinkButton link="/">HOME</LinkButton>
+                <LinkButton exact link="/">HOME</LinkButton>
                 <LinkButton link="/gamedevs/">GAMEDEVS</LinkButton>
                 <LinkButton link="/streamers/">STREAMERS</LinkButton>
                 <LinkButton link="/contact/">CONTACT</LinkButton>

@@ -24,7 +24,7 @@ function App() {
             <Route path="/gamedevs" component={Gamedevs}/>
             <Route path="/streamers" component={Streamers}/>
             <Route path="/contact" component={Contact}/>
-            <Route component={Home}/>
+            <Route path="/" component={Home}/>
         </Switch>
         
     </div>

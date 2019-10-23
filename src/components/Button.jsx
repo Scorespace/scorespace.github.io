@@ -5,9 +5,9 @@ import './style/Button.css';
 
 function Button(props){
     return ( 
-        <div className="Button" onClick={props.onClick} style={props.style}>
+        <span className="Button" onClick={props.onClick} style={props.style}>
             {props.children}
-        </div> 
+        </span> 
     );
 }
 

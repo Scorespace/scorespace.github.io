@@ -1,8 +1,5 @@
 import React from 'react';
 import Controller from '../../assets/controller.png';
-import Banner from '../../assets/scorespace_banner.png';
-import {Row} from '../Grid';
-import TypedHeading, {FadeBody} from '../TypedHeading';
 import Background from '../../assets/space_background.png';
 import {TopbarMargin, BaseMargin} from '../Topbar';
 import Jumbotron from '../Jumbotron';
@@ -23,7 +20,7 @@ function Streamers(props){
                     <BaseMargin/>
                 </Jumbotron>
 
-                <Jumbotron style={{backgroundColor: "white"}} pStyle={{color: "black"}}>
+                <Jumbotron style={{backgroundColor: "white"}} pStyle={{color: "black", textAlign:"left"}}>
                     <h2>Rules</h2>
                     <p>
                         <ol>
