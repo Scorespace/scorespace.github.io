@@ -25,7 +25,7 @@ function Home(props){
                         <b>Join our Discord</b>
                     </Button>
 
-                    <Button onClick={() => window.open("hhttps://itch.io/jam/polyspace1")} style={{display: "inline-flex", flexDirection: "column", width: 200, backgroundColor: "#00C0FF", margin: 20, borderRadius: 10, fontSize: 20}}>
+                    <Button onClick={() => window.open("https://itch.io/jam/polyspace1")} style={{display: "inline-flex", flexDirection: "column", width: 200, backgroundColor: "#00C0FF", margin: 20, borderRadius: 10, fontSize: 20}}>
                         <b>Most Recent Jam</b>
                     </Button>
                     </span>
