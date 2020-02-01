@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "68d7d3eaca1c767119d63a06de535668",
+    "revision": "ee456cedd5b5b9f978505ab84e3f8404",
     "url": "/index.html"
   },
   {
-    "revision": "a16c802fa3a4bd53e411",
-    "url": "/static/css/main.f39cf10d.chunk.css"
+    "revision": "944bb81e693d408e7e21",
+    "url": "/static/css/main.7aa1f0fc.chunk.css"
   },
   {
-    "revision": "080b487ab2e72cfec3af",
-    "url": "/static/js/2.64a76619.chunk.js"
+    "revision": "8987a33b083e1c5870f2",
+    "url": "/static/js/2.2a3c81ec.chunk.js"
   },
   {
-    "revision": "a16c802fa3a4bd53e411",
-    "url": "/static/js/main.7e8125f7.chunk.js"
+    "revision": "944bb81e693d408e7e21",
+    "url": "/static/js/main.97e16077.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -24,8 +24,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/controller.418600b9.png"
   },
   {
+    "revision": "6c5d6838fcad34831047ac3f87afb88f",
+    "url": "/static/media/destruction.6c5d6838.png"
+  },
+  {
     "revision": "0df40b9e9442ddaaf98e4748dd2c9da0",
     "url": "/static/media/envelope.0df40b9e.png"
+  },
+  {
+    "revision": "447ba3bc4227fb0ada26e6c9ea37e0bf",
+    "url": "/static/media/growth.447ba3bc.png"
+  },
+  {
+    "revision": "2790302dcdd9de9e1d551fa185050c80",
+    "url": "/static/media/karma.2790302d.png"
   },
   {
     "revision": "d7928e94a514ef374cec63daad3b44f5",
@@ -44,7 +56,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/scorespace_banner.9ffc34b1.png"
   },
   {
+    "revision": "06772c27ba7e4a9568e8c8825228e2e7",
+    "url": "/static/media/space.06772c27.png"
+  },
+  {
     "revision": "25e637c2e6797fcafc84e1b512a6cb5d",
     "url": "/static/media/space_background.25e637c2.png"
+  },
+  {
+    "revision": "fad5e2e7615896c2123af6d556ea3d20",
+    "url": "/static/media/underground.fad5e2e7.png"
+  },
+  {
+    "revision": "726032d11186a30825ae335c1733fc53",
+    "url": "/static/media/waves.726032d1.png"
   }
 ]);
