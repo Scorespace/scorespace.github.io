@@ -1,6 +1,7 @@
 import React from 'react';
 import './style/Topbar.css';
 import LinkButton from './LinkButton';
+import Button from './Button'
 import logo from '../assets/logo.png';
 
 function Nav(props){
@@ -18,9 +19,12 @@ function Topbar(){
 
             <Nav>
                 <LinkButton exact link="/">HOME</LinkButton>
-                <LinkButton link="/gamedevs/">GAMEDEVS</LinkButton>
-                <LinkButton link="/streamers/">STREAMERS</LinkButton>
-                <LinkButton link="/contact/">CONTACT</LinkButton>
+                <LinkButton link="/leaderboard">LEADERBOARD</LinkButton>
+                <LinkButton link="/gamedevs">GAMEDEVS</LinkButton>
+                <LinkButton link="/streamers">STREAMERS</LinkButton>
+                <LinkButton link="/contact">CONTACT</LinkButton>
+                <LinkButton link="/prevjam">PREVIOUS JAMS</LinkButton>
+                <Button onClick={() => window.open("https://teespring.com/stores/scorespace-store")}>MERCH</Button>
             </Nav>
         </div>
     );

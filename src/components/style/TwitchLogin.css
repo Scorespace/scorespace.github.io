@@ -1,0 +1,32 @@
+.twitch-login {
+	padding: 8px 8px 8px 40px;
+	background: #6441a5;
+	color: #FFFFFF;
+	cursor: pointer;
+	position: relative;
+	border-radius: 2px;
+	transition: background-color 0.1s ease-in-out;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	max-width: 300px;
+	min-width: 250px;
+	display: inline-block;
+	text-decoration: none;
+}
+.twitch-login svg {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 12px;
+}
+
+.twitch-login:hover {
+	background-color: #5A379B;
+}
+
+.twitch-login:active {
+	background-color: #310E72;
+}

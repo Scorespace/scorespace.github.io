@@ -1,0 +1,78 @@
+.select {
+	display: block;
+	position: relative;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+.select .main {
+	border-radius: 2px;
+	border: 1px solid #000a12;
+	background-color: #102027;
+	cursor: pointer;
+}
+.select .element {
+	padding: 8px;
+	text-align: left;
+	height: 38px;
+	vertical-align: middle;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	background-color: #102027;
+	transition: background-color 0.1s ease-in-out;
+	position: relative;
+}
+.select .main .element span {
+	padding-right: 16px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.select .menu .element {
+	border-top: 1px solid #000a12;
+}
+.select .menu .element:first-child {
+	border-top: none;
+}
+.select .menu .element:hover {
+	background-color: #1A2A31;
+}
+.select .menu .element:active {
+	background-color: #24343B;
+}
+.select .element img {
+	height: 100%;
+	margin-right: 8px;
+	display: inline-block;
+}
+.select .element span {
+	display: inline-block;
+	vertical-align: middle;
+}
+.select .menu {
+	position: absolute;
+	background-color: #102027; 
+	width: 100%;
+	left: 0;
+	right: 0;
+	z-index: 100500;
+	margin-top: 2px;
+	border: 1px solid #000a12;
+	border-radius: 2px;
+}
+.select .open-arrow {
+	position: absolute;
+	right: 8px;
+	top: 8px;
+	bottom: 8px;
+	vertical-align: middle;
+}
+.select .open-arrow svg {
+	width: 100%;
+	height: 100%;
+}
+.select.error .main {
+	animation: input-error 1s ease-in-out forwards;
+}

@@ -32,6 +32,8 @@ class QuoteBox extends Component{
 
         if(this.quoteIndex >= this.quotes.length ){
             this.quoteIndex = 0;
+        } else if(this.quoteIndex < 0){
+            this.quoteIndex = this.quotes.length - 1;
         }
 
 

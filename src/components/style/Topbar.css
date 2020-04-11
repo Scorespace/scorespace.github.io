@@ -25,6 +25,9 @@
 
     margin-right: 20px;
 }
+.Topbar .Button {
+    width: initial;
+}
 
 .BaseMargin{
     position: relative;

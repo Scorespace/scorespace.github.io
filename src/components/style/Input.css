@@ -1,0 +1,37 @@
+.input {
+	height: 38px;
+	padding: 8px;
+	border: 1px solid #000a12;
+	background-color: #102027;
+	transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.input input {
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	outline: none;
+	border: none;
+	color: #FFFFFF;
+	font-size: initial;
+	font-family: inherit;
+}
+.input.error {
+	animation: input-error 0.5s ease-in-out forwards;
+}
+
+@keyframes input-error {
+	 0%  { transform: translateX(0px);
+	 	   background-color: #7f0000; }
+	10%  { transform: translateX(1px); }
+	20%  { transform: translateX(-1px); }
+	30%  { transform: translateX(2px); }
+	40%  { transform: translateX(-2px); }
+	50%  { transform: translateX(3px); }
+	60%  { transform: translateX(-3px); }
+	70%  { transform: translateX(2px); }
+	80%  { transform: translateX(-2px);
+		   background-color: #7f0000; }
+	90%  { transform: translateX(1px); }
+	100% { transform: translateX(0px);
+		   background-color: #102027; }
+}

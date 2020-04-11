@@ -3,7 +3,7 @@ import PC from '../../assets/pc.png';
 import { TopbarMargin, BaseMargin } from '../Topbar';
 import TypedHeading, {FadeBody} from '../TypedHeading';
 import Background from '../../assets/space_background.png';
-import Jumbotron from '../Jumbotron';
+import SectionBox from '../SectionBox';
 import Footer from '../Footer';
 
 
@@ -12,7 +12,7 @@ function Gamedevs(props){
         <div>
             <section style={{background:`url(${Background})`, height: "auto", position: "absolute", backgroundSize: "100%", backgroundPosition: "0% -53%"}}>
                 <TopbarMargin/>
-                <Jumbotron style={{height: "auto"}}>
+                <SectionBox style={{height: "auto"}}>
                     <img src={PC} width={200} style={{marginBottom: 40, marginTop: "51px"}}/>
                     <h2>Gamedevs</h2>
                     <p>
@@ -20,9 +20,9 @@ function Gamedevs(props){
                     Once they've done this, a rating period will begin, where the other jam participants rate each game. The rating period is critical; it determines who wins this portion!
                     </p>
                     <BaseMargin/>
-                </Jumbotron>
+                </SectionBox>
 
-                <Jumbotron style={{backgroundColor: "white"}} pStyle={{color: "black", textAlign: "left"}}>
+                <SectionBox style={{backgroundColor: "white"}} pStyle={{color: "black", textAlign: "left"}}>
                     <h2>Rules</h2>
                     <p>
                         <ol style={{textAlign: "left"}}>
@@ -34,9 +34,10 @@ function Gamedevs(props){
                             <li>All games submitted must be digital games that can be played on the Web or Windows.</li>
                         </ol>
                     </p>
-                </Jumbotron>
+                </SectionBox>
+
+                <Footer/>
             </section>
-            <Footer/>
         </div>
     );
 }

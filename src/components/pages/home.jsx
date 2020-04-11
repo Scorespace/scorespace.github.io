@@ -4,7 +4,7 @@ import Controller from '../../assets/controller.png';
 import PC from '../../assets/pc.png';
 import { TopbarMargin, BaseMargin } from '../Topbar';
 import TypedHeading, {FadeBody} from '../TypedHeading';
-import Jumbotron from '../Jumbotron';
+import SectionBox from '../SectionBox';
 import Button from '../Button';
 import QuoteBox from '../QuoteBox';
 import Footer from '../Footer';
@@ -14,7 +14,7 @@ function Home(props){
         <div>  
             <section className="Banner" style={{background:`url(${Background})`, height: "auto", position: "relative", backgroundSize: "100%", backgroundPositionY: "-10%"}}>
                 <TopbarMargin/>
-                <Jumbotron style={{height: "auto"}}>
+                <SectionBox style={{height: "auto"}}>
                     <h2>A two-sided competition made for game developers and streamers.</h2>
                     <p>
                     ScoreSpace aims to create a platform that connects gamedevs and streamers to create a community of creators helping each other grow. It is the only gamejam that involves streamers after the games are made. 
@@ -25,16 +25,16 @@ function Home(props){
                         <b>Join our Discord</b>
                     </Button>
 
-                    <Button onClick={() => window.open("https://itch.io/jam/polyspace1")} style={{display: "inline-flex", flexDirection: "column", width: 200, backgroundColor: "#00C0FF", margin: 20, borderRadius: 10, fontSize: 20}}>
+                    <Button onClick={() => window.open("https://itch.io/jam/scorejam8")} style={{display: "inline-flex", flexDirection: "column", width: 200, backgroundColor: "#00C0FF", margin: 20, borderRadius: 10, fontSize: 20}}>
                         <b>Most Recent Jam</b>
                     </Button>
                     </span>
 
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/Xo6VWiJkOIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <BaseMargin/>
-                </Jumbotron>
+                </SectionBox>
 
-                <Jumbotron style={{backgroundColor: `#16263A`}}>
+                <SectionBox style={{backgroundColor: `#16263A`}}>
                     <BaseMargin/>
                     <div className={"icon"}>
                         <img src={PC} width={100}/>
@@ -56,11 +56,11 @@ function Home(props){
                     <p style={{lineHeight: 1.5}}>
                     When the video is uploaded is also when the 48 hour timer starts for the streamers. The goal for the streamers is to get a highscore in one of the three games. Once the timer runs out the streamers submit their VOD and the player who achieves the highest score in each game wins. 
                     </p>
-                </Jumbotron>
+                </SectionBox>
 
-                <Jumbotron style={{backgroundColor: `white`}} pStyle={{color: `black`}}>
+                <SectionBox style={{backgroundColor: `white`}} pStyle={{color: `black`}}>
                     <QuoteBox/>
-                </Jumbotron>
+                </SectionBox>
             </section>
             <Footer/>
         </div>

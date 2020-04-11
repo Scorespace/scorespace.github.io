@@ -1,0 +1,23 @@
+.loader {
+	width: 48px;
+	height: 48px;
+	position: relative;
+	overflow: auto;
+}
+.loader span {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-style: solid;
+	border-color: #FFFFFF transparent transparent transparent;
+	border-width: 5px;
+	border-radius: 50%;
+	animation: loader-animation 1s ease-in-out infinite;
+}
+@keyframes loader-animation {
+	0% {transform: rotate(0deg);}
+	50% {transform: rotate(180deg);}
+	100% {transform: rotate(360deg);}
+}
