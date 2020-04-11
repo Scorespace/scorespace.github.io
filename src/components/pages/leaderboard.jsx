@@ -17,7 +17,7 @@ import '../style/Leaderboard.css';
 
 const CLIENT_ID = "366ayo1qq1zw0mbhq50ky99sz71e4f";
 const TWITCH_AUTH = 'https://id.twitch.tv/oauth2/authorize?client_id=' + CLIENT_ID + 
-						'&redirect_uri=' + encodeURIComponent('http://localhost/#leaderboard') + 
+						'&redirect_uri=' + encodeURIComponent('https://scorespace.net/#/leaderboard') + 
 						'&response_type=code';
 function TwitchButton() {
 	return (
