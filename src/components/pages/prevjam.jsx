@@ -12,6 +12,7 @@ import Growth from '../../assets/JamLogos/growth.png';
 import Destruction from '../../assets/JamLogos/destruction.png';
 import Karma from '../../assets/JamLogos/karma.png';
 import Gravity from '../../assets/JamLogos/gravity.png';
+import Balance from '../../assets/JamLogos/balance.png';
 
 var listOfJams = [
     {
@@ -68,6 +69,14 @@ var listOfJams = [
         link: "https://itch.io/jam/scorejam7",
         desc: "The theme for the 7th ScoreJam presented by @shacknews is... GRAVITY!!! It's what holds our universe together and it is what will alter your game universe. There are so many ways to interpret this theme and we can't wait to see the games you create :D #doitforshacknews #indiedev",
         pic: Gravity
+    },
+
+    {
+        logo: Logo,
+        title: "ScoreSpace Jam #8",
+        link: "https://itch.io/jam/scorejam8",
+        desc: "The theme for the 8th ScoreSpace Jam is... BALANCE!!! ",
+        pic: Balance
     }
 ]
 
@@ -86,7 +95,7 @@ function Contact(props){
                     <img src={item.pic} style={{width: 200, float: "left"}}/>
                     <h2>{item.title}</h2> 
                     <a href={item.link} style={{color:"#00C0FF"}}>{item.link}</a>
-                    <p> {item.desc} </p>
+                    <p> "{item.desc}" </p>
                 </SectionBox>
             )
         }
