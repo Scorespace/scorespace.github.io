@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.1677f30f.chunk.css",
-    "main.js": "/static/js/main.6e69f53a.chunk.js",
-    "main.js.map": "/static/js/main.6e69f53a.chunk.js.map",
+    "main.css": "/static/css/main.534618bf.chunk.css",
+    "main.js": "/static/js/main.88948e99.chunk.js",
+    "main.js.map": "/static/js/main.88948e99.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4071a7a5.js",
     "runtime-main.js.map": "/static/js/runtime-main.4071a7a5.js.map",
-    "static/js/2.6f51d5dd.chunk.js": "/static/js/2.6f51d5dd.chunk.js",
-    "static/js/2.6f51d5dd.chunk.js.map": "/static/js/2.6f51d5dd.chunk.js.map",
+    "static/js/2.56e04898.chunk.js": "/static/js/2.56e04898.chunk.js",
+    "static/js/2.56e04898.chunk.js.map": "/static/js/2.56e04898.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.cc74dedf5e0ed7917a345ba2b972d685.js": "/precache-manifest.cc74dedf5e0ed7917a345ba2b972d685.js",
+    "precache-manifest.66c540d05504fbdea621da1d8593d5d9.js": "/precache-manifest.66c540d05504fbdea621da1d8593d5d9.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.1677f30f.chunk.css.map": "/static/css/main.1677f30f.chunk.css.map",
-    "static/js/2.6f51d5dd.chunk.js.LICENSE.txt": "/static/js/2.6f51d5dd.chunk.js.LICENSE.txt",
-    "static/media/SelectArrow.f5771ecd.svg": "/static/media/SelectArrow.f5771ecd.svg",
+    "static/css/main.534618bf.chunk.css.map": "/static/css/main.534618bf.chunk.css.map",
+    "static/js/2.56e04898.chunk.js.LICENSE.txt": "/static/js/2.56e04898.chunk.js.LICENSE.txt",
+    "static/media/SelectArrow.07e07e03.svg": "/static/media/SelectArrow.07e07e03.svg",
+    "static/media/balance.png": "/static/media/balance.37abe006.png",
     "static/media/controller.png": "/static/media/controller.418600b9.png",
     "static/media/destruction.png": "/static/media/destruction.6c5d6838.png",
     "static/media/envelope.png": "/static/media/envelope.0df40b9e.png",
@@ -24,14 +25,14 @@
     "static/media/scorespace_banner.png": "/static/media/scorespace_banner.9ffc34b1.png",
     "static/media/space.png": "/static/media/space.06772c27.png",
     "static/media/space_background.png": "/static/media/space_background.25e637c2.png",
-    "static/media/twitch.ae080122.svg": "/static/media/twitch.ae080122.svg",
+    "static/media/twitch.e837f986.svg": "/static/media/twitch.e837f986.svg",
     "static/media/underground.png": "/static/media/underground.fad5e2e7.png",
     "static/media/waves.png": "/static/media/waves.726032d1.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4071a7a5.js",
-    "static/js/2.6f51d5dd.chunk.js",
-    "static/css/main.1677f30f.chunk.css",
-    "static/js/main.6e69f53a.chunk.js"
+    "static/js/2.56e04898.chunk.js",
+    "static/css/main.534618bf.chunk.css",
+    "static/js/main.88948e99.chunk.js"
   ]
 }
