@@ -5,9 +5,9 @@ import {Row, Column} from './components/Grid';
 
 import Banner from './assets/scorespace_banner.png';
 
+import MakeGames from './components/pages/makegames';
+import PlayGames from './components/pages/playgames';
 import Home from './components/pages/home';
-import Streamers from './components/pages/streamers';
-import Gamedevs from './components/pages/gamedevs';
 import Contact from './components/pages/contact';
 import PreviousJams from './components/pages/prevjam';
 import Leaderboard from './components/pages/leaderboard';
@@ -23,12 +23,12 @@ function App() {
         <Topbar/>
         
         <Switch>
-            <Route path="/gamedevs" component={Gamedevs}/>
-            <Route path="/streamers" component={Streamers}/>
             <Route path="/contact" component={Contact}/>
             <Route path="/prevjam" component={PreviousJams}/>
             <Route path="/leaderboard" component={Leaderboard}/>
-            <Route path="/" component={Home}/>
+            <Route path="/makegames" component={MakeGames}/>
+            <Route path="/playgames" component={PlayGames}/>
+            <Route exact path="/" component={Home}/>
         </Switch>
         
     </div>

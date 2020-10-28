@@ -19,35 +19,34 @@ function Contact(props){
             <section style={{background:`url(${Background})`, width: "100%", height: "auto", position: "absolute", backgroundSize: "100%", backgroundPosition: "0% -53%"}}>
                 <TopbarMargin/>
                 <SectionBox style={{height: "auto"}}>
-                    <img src={Mailbox} width={200} style={{marginBottom: 40}}/>
                     <h2>Contact</h2>
                     <p>
                     If you need to get in contact with us (or other members of the community) you've come to the right place! 
                     </p>
                 </SectionBox>
 
-                <SectionBox style={{backgroundColor: discord_color}} pStyle={{color: "white"}}>
-                    <img src={Discord} width={200}/>
+                <SectionBox pStyle={{color: "white"}}>
+                    <img src={Discord} width={100}/>
                     <p>
                     Discord is by far the fastest way to reach us. If you want to discuss general gamedev, jam ideas & suggestions for future scorespace jams this is the place to be. You can join us <a href="https://invite.gg/scorespace">here.</a>
                     </p>
                 </SectionBox>
 
-                <SectionBox style={{backgroundColor: email_color}} pStyle={{color: "white"}}>
+                <SectionBox pStyle={{color: "white"}}>
                     <img src={Email} width={100}/>
                     <p>
                     If you have a more professional enquiry (i.e sponsorship, business deal etc.) you can contact us at <a href="mailto:info@scorespace.net">info@scorespace.net</a>
                     </p>
                 </SectionBox>
 
-                <SectionBox style={{backgroundColor: twitter_color}} pStyle={{color: "white"}}>
+                <SectionBox pStyle={{color: "white"}}>
                     <img src={Twitter} width={100}/>
                     <p>
                     If you want to keep up with our news and see what other developers are doing, you can follow us on twitter for some quality content! You can follow us <a href="https://twitter.com/scorespacejam">here.</a>
                     </p>
                 </SectionBox>
 
-                <SectionBox style={{backgroundColor: "white"}} pStyle={{color: "black"}}>
+                <SectionBox pStyle={{color: "white"}}>
                     <img src={Reddit} width={200}/>
                     <p>
                     While it may not be the most active, our subreddit is still a cool place to post your gamedev content. You can browse it <a href="https://reddit.com/r/scorespace">here.</a>

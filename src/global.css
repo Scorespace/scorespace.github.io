@@ -33,6 +33,7 @@ section{
 }
 
 h1{
+    font-size:50px;
     margin: 0;
     margin-top: 10px;
     margin-left: 25px;
@@ -70,6 +71,10 @@ video{
 
 .Banner{
     height: 10px;
+}
+
+.HomeSec{
+    height:100vh;
 }
 
 @media screen and (max-width: 900px){

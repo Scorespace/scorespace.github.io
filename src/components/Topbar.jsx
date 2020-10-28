@@ -3,6 +3,7 @@ import './style/Topbar.css';
 import LinkButton from './LinkButton';
 import Button from './Button'
 import logo from '../assets/logo.png';
+import {withRouter} from 'react-router-dom';
 
 function Nav(props){
     return(
@@ -12,19 +13,19 @@ function Nav(props){
     );
 }
 
-function Topbar(){
+function Topbar(props){
     return ( 
         <div className="Topbar">
-            <img alt="ScoreSpace's logo" src={logo} width={125} height={125} className="Logo"/>
+            <img alt="ScoreSpace's logo" src={logo} width={125} height={125} className="Logo" style={{cursor:"pointer"}} onClick={() => props.history.push("/")}/>
 
             <Nav>
-                <LinkButton exact link="/">HOME</LinkButton>
+                <LinkButton link="/makegames">SCOREJAM</LinkButton>
+                <LinkButton link="/playgames">SCOREDROPS</LinkButton>
+                <Button onClick={() => window.open("https://teespring.com/stores/scorespace-store")}>MERCH</Button>
                 <LinkButton link="/leaderboard">LEADERBOARD</LinkButton>
-                <LinkButton link="/gamedevs">GAMEDEVS</LinkButton>
-                <LinkButton link="/streamers">STREAMERS</LinkButton>
                 <LinkButton link="/contact">CONTACT</LinkButton>
                 <LinkButton link="/prevjam">PREVIOUS JAMS</LinkButton>
-                <Button onClick={() => window.open("https://teespring.com/stores/scorespace-store")}>MERCH</Button>
+                
             </Nav>
         </div>
     );
@@ -42,4 +43,4 @@ export function BaseMargin(){
     );
 }
 
-export default Topbar;
+export default withRouter(Topbar);

@@ -18,7 +18,7 @@ function Footer(){
             <Row style={{height: "100px"}}>
                 <Column centered="true">
                     <p style={footerStyle}>
-                    <a target="_blank" style={footerStyle} href="https://twitter.com/scorespacejam"><img height={29} src={Twitter}/></a>{"   "}
+                    <a target="_blank" style={footerStyle} href="https://twitter.com/scrspc"><img height={29} src={Twitter}/></a>{"   "}
                     <a target="_blank" style={footerStyle} href="https://invite.gg/scorespace"><img height={27.5} src={Discord}/></a> {"  "}
                     <a target="_blank" style={footerStyle} href="mailto:info@scorespace.net"><img height={27} src={Email}/></a>
                     </p>
