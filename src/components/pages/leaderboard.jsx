@@ -235,7 +235,7 @@ export default class LeaderboardPage extends React.Component {
 			<div>
 				<TopbarMargin/>
                 <SectionBox style={{height: "auto"}}>
-                    <h2>ScoreSpace #9 Leaderboard</h2>
+                    <h2>ScoreSpace #10 Leaderboard</h2>
                     <p>Here is a live leaderboard of twitch streamers:</p>
                     {
                     	this.state.board === null ? 
