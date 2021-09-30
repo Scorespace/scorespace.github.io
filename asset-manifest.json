@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.011bbec9.chunk.css",
-    "main.js": "/static/js/main.211a6470.chunk.js",
-    "main.js.map": "/static/js/main.211a6470.chunk.js.map",
+    "main.js": "/static/js/main.d14dca7a.chunk.js",
+    "main.js.map": "/static/js/main.d14dca7a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4071a7a5.js",
     "runtime-main.js.map": "/static/js/runtime-main.4071a7a5.js.map",
-    "static/js/2.f760c1b7.chunk.js": "/static/js/2.f760c1b7.chunk.js",
-    "static/js/2.f760c1b7.chunk.js.map": "/static/js/2.f760c1b7.chunk.js.map",
+    "static/js/2.1ee0972f.chunk.js": "/static/js/2.1ee0972f.chunk.js",
+    "static/js/2.1ee0972f.chunk.js.map": "/static/js/2.1ee0972f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.36d0c03e10c828c355448a9816f9591e.js": "/precache-manifest.36d0c03e10c828c355448a9816f9591e.js",
+    "precache-manifest.cf7790fd37d9f25fdc1f17c5c569d267.js": "/precache-manifest.cf7790fd37d9f25fdc1f17c5c569d267.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.011bbec9.chunk.css.map": "/static/css/main.011bbec9.chunk.css.map",
-    "static/js/2.f760c1b7.chunk.js.LICENSE.txt": "/static/js/2.f760c1b7.chunk.js.LICENSE.txt",
+    "static/js/2.1ee0972f.chunk.js.LICENSE.txt": "/static/js/2.1ee0972f.chunk.js.LICENSE.txt",
     "static/media/SelectArrow.07e07e03.svg": "/static/media/SelectArrow.07e07e03.svg",
     "static/media/balance.png": "/static/media/balance.37abe006.png",
     "static/media/controller.png": "/static/media/controller.418600b9.png",
@@ -25,15 +25,15 @@
     "static/media/pc.png": "/static/media/pc.eaec57f4.png",
     "static/media/scorespace_banner.png": "/static/media/scorespace_banner.9ffc34b1.png",
     "static/media/space.png": "/static/media/space.06772c27.png",
-    "static/media/space_background.png": "/static/media/space_background.25e637c2.png",
+    "static/media/space_background.png": "/static/media/space_background.4f807d8a.png",
     "static/media/twitch.e837f986.svg": "/static/media/twitch.e837f986.svg",
     "static/media/underground.png": "/static/media/underground.fad5e2e7.png",
     "static/media/waves.png": "/static/media/waves.726032d1.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4071a7a5.js",
-    "static/js/2.f760c1b7.chunk.js",
+    "static/js/2.1ee0972f.chunk.js",
     "static/css/main.011bbec9.chunk.css",
-    "static/js/main.211a6470.chunk.js"
+    "static/js/main.d14dca7a.chunk.js"
   ]
 }
